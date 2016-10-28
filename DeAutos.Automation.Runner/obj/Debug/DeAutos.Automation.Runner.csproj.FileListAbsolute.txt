@@ -1,0 +1,14 @@
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Runner\bin\Debug\DeAutos.Automation.Runner.exe.config
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Runner\bin\Debug\DeAutos.Automation.Runner.exe
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Runner\bin\Debug\DeAutos.Automation.Runner.pdb
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Runner\bin\Debug\DeAutos.Automation.Framework.dll
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Runner\bin\Debug\JSErrorCollector.dll
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Runner\bin\Debug\NDesk.Options.dll
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Runner\bin\Debug\WebDriver.dll
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Runner\bin\Debug\WebDriver.Support.dll
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Runner\bin\Debug\DeAutos.Automation.Framework.pdb
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Runner\bin\Debug\WebDriver.xml
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Runner\bin\Debug\WebDriver.Support.xml
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Runner\obj\Debug\DeAutos.Automation.Runner.csprojResolveAssemblyReference.cache
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Runner\obj\Debug\DeAutos.Automation.Runner.exe
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Runner\obj\Debug\DeAutos.Automation.Runner.pdb

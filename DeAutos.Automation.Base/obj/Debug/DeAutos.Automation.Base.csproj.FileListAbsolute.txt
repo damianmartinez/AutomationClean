@@ -1,0 +1,14 @@
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Base\bin\Debug\DeAutos.Automation.Base.dll
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Base\bin\Debug\DeAutos.Automation.Base.pdb
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Base\bin\Debug\DeAutos.Automation.Framework.dll
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Base\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Base\bin\Debug\WebDriver.dll
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Base\bin\Debug\WebDriver.Support.dll
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Base\bin\Debug\JSErrorCollector.dll
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Base\bin\Debug\DeAutos.Automation.Framework.pdb
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Base\bin\Debug\WebDriver.xml
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Base\bin\Debug\WebDriver.Support.xml
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Base\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Base\obj\Debug\DeAutos.Automation.Base.csprojResolveAssemblyReference.cache
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Base\obj\Debug\DeAutos.Automation.Base.dll
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Base\obj\Debug\DeAutos.Automation.Base.pdb

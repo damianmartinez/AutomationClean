@@ -1,0 +1,9 @@
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Model\bin\Debug\DeAutos.Automation.Model.dll.config
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Model\bin\Debug\DeAutos.Automation.Model.dll
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Model\bin\Debug\DeAutos.Automation.Model.pdb
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Model\bin\Debug\EntityFramework.dll
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Model\bin\Debug\EntityFramework.xml
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Model\obj\Debug\DeAutos.Automation.Model.dll
+C:\projects\deautos\automation\AutomationNet\DeAutos.Automation.Model\obj\Debug\DeAutos.Automation.Model.pdb

@@ -1,0 +1,2339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DeAutosAutomationModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="BannerCampaigns">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.BannerCampaign">
+        <MappingFragment StoreEntitySet="BannerCampaign">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="A_Name" ColumnName="A_Name" />
+          <ScalarProperty Name="F_VehicleModel_Id" ColumnName="F_VehicleModel_Id" />
+          <ScalarProperty Name="A_CreationDate" ColumnName="A_CreationDate" />
+          <ScalarProperty Name="A_BannerSize" ColumnName="A_BannerSize" />
+          <ScalarProperty Name="A_Origin" ColumnName="A_Origin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BannerInfoes">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.BannerInfo">
+        <MappingFragment StoreEntitySet="BannerInfo">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Section" ColumnName="Section" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="UseIframe" ColumnName="UseIframe" />
+          <ScalarProperty Name="Provider" ColumnName="Provider" />
+          <ScalarProperty Name="FormatId" ColumnName="FormatId" />
+          <ScalarProperty Name="Server" ColumnName="Server" />
+          <ScalarProperty Name="Behaviour" ColumnName="Behaviour" />
+          <ScalarProperty Name="Zone" ColumnName="Zone" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="Parameters" ColumnName="Parameters" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Prelistings">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.Prelisting">
+        <MappingFragment StoreEntitySet="Prelisting">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Seconds" ColumnName="Seconds" />
+          <ScalarProperty Name="TxColor" ColumnName="TxColor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrelistingToVehicleBrands">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PrelistingToVehicleBrand">
+        <MappingFragment StoreEntitySet="PrelistingToVehicleBrand">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="VehicleBrand_Id" ColumnName="VehicleBrand_Id" />
+          <ScalarProperty Name="Prelisting_Id" ColumnName="Prelisting_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PrelistingToVehicleModels">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PrelistingToVehicleModel">
+        <MappingFragment StoreEntitySet="PrelistingToVehicleModel">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="VehicleModel_Id" ColumnName="VehicleModel_Id" />
+          <ScalarProperty Name="Prelisting_Id" ColumnName="Prelisting_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tags">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.Tag">
+        <MappingFragment StoreEntitySet="Tag">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="KeyString" ColumnName="KeyString" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="idBusinessDomain" ColumnName="idBusinessDomain" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Alerts">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.Alert">
+        <MappingFragment StoreEntitySet="Alert">
+          <ScalarProperty Name="P_IDAlert" ColumnName="P_IDAlert" />
+          <ScalarProperty Name="F_User_ID" ColumnName="F_User_ID" />
+          <ScalarProperty Name="F_IDInterval" ColumnName="F_IDInterval" />
+          <ScalarProperty Name="F_PublishableItemType" ColumnName="F_PublishableItemType" />
+          <ScalarProperty Name="A_AlertName" ColumnName="A_AlertName" />
+          <ScalarProperty Name="A_Description" ColumnName="A_Description" />
+          <ScalarProperty Name="A_DateCreation" ColumnName="A_DateCreation" />
+          <ScalarProperty Name="A_LastSentDate" ColumnName="A_LastSentDate" />
+          <ScalarProperty Name="A_Enabled" ColumnName="A_Enabled" />
+          <ScalarProperty Name="A_URL" ColumnName="A_URL" />
+          <ScalarProperty Name="A_Find" ColumnName="A_Find" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AlertFeatures">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.AlertFeature">
+        <MappingFragment StoreEntitySet="AlertFeature">
+          <ScalarProperty Name="P_ID_Alert_Feature" ColumnName="P_ID_Alert_Feature" />
+          <ScalarProperty Name="F_IDAlert" ColumnName="F_IDAlert" />
+          <ScalarProperty Name="A_Feature" ColumnName="A_Feature" />
+          <ScalarProperty Name="A_Value" ColumnName="A_Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AlertIntervals">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.AlertInterval">
+        <MappingFragment StoreEntitySet="AlertInterval">
+          <ScalarProperty Name="P_IdInterval" ColumnName="P_IdInterval" />
+          <ScalarProperty Name="A_Name" ColumnName="A_Name" />
+          <ScalarProperty Name="A_Time" ColumnName="A_Time" />
+          <ScalarProperty Name="A_Enabled" ColumnName="A_Enabled" />
+          <ScalarProperty Name="A_Code" ColumnName="A_Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AlertPublishableItems">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.AlertPublishableItem">
+        <MappingFragment StoreEntitySet="AlertPublishableItem">
+          <ScalarProperty Name="A_idAlert" ColumnName="A_idAlert" />
+          <ScalarProperty Name="A_idPublishableItem" ColumnName="A_idPublishableItem" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AlertUsers">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.AlertUser">
+        <MappingFragment StoreEntitySet="AlertUser">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="GeolocationId" ColumnName="GeolocationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BackOfficeLogs">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.BackOfficeLog">
+        <MappingFragment StoreEntitySet="BackOfficeLog">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="BackOfficereasons" ColumnName="BackOfficereasons" />
+          <ScalarProperty Name="PublicationOrderId" ColumnName="PublicationOrderId" />
+          <ScalarProperty Name="SuscriptionId" ColumnName="SuscriptionId" />
+          <ScalarProperty Name="PurchaseOrderId" ColumnName="PurchaseOrderId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SecurityRoles">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.SecurityRole">
+        <MappingFragment StoreEntitySet="SecurityRole">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="authority" ColumnName="authority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SecurityUsers">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.SecurityUser">
+        <MappingFragment StoreEntitySet="SecurityUser">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="account_expired" ColumnName="account_expired" />
+          <ScalarProperty Name="account_locked" ColumnName="account_locked" />
+          <ScalarProperty Name="enabled" ColumnName="enabled" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="applicationToken" ColumnName="applicationToken" />
+          <ScalarProperty Name="password_expired" ColumnName="password_expired" />
+          <ScalarProperty Name="username" ColumnName="username" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reportings">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.Reporting">
+        <MappingFragment StoreEntitySet="Reporting">
+          <ScalarProperty Name="Nombre_Reporte" ColumnName="Nombre_Reporte" />
+          <ScalarProperty Name="Nombre_SP" ColumnName="Nombre_SP" />
+          <ScalarProperty Name="To" ColumnName="To" />
+          <ScalarProperty Name="Asunto" ColumnName="Asunto" />
+          <ScalarProperty Name="Hora_Envio" ColumnName="Hora_Envio" />
+          <ScalarProperty Name="Ultimo_Envio" ColumnName="Ultimo_Envio" />
+          <ScalarProperty Name="Umbral" ColumnName="Umbral" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReportingScheduleds">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.ReportingScheduled">
+        <MappingFragment StoreEntitySet="ReportingScheduled">
+          <ScalarProperty Name="Nombre_Reporte" ColumnName="Nombre_Reporte" />
+          <ScalarProperty Name="Nombre_Reporte_Interno" ColumnName="Nombre_Reporte_Interno" />
+          <ScalarProperty Name="To" ColumnName="To" />
+          <ScalarProperty Name="Date_Envio" ColumnName="Date_Envio" />
+          <ScalarProperty Name="Date_Ultimo_Envio" ColumnName="Date_Ultimo_Envio" />
+          <ScalarProperty Name="Enviado" ColumnName="Enviado" />
+          <ScalarProperty Name="SQL" ColumnName="SQL" />
+          <ScalarProperty Name="INTERVALO_DIAS" ColumnName="INTERVALO_DIAS" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentMethods">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PaymentMethod">
+        <MappingFragment StoreEntitySet="PaymentMethod">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PaymentMethodInBackOffice" ColumnName="PaymentMethodInBackOffice" />
+          <ScalarProperty Name="PaymentMethodInFrontEnd" ColumnName="PaymentMethodInFrontEnd" />
+          <ScalarProperty Name="PaymentMethodOnline" ColumnName="PaymentMethodOnline" />
+          <ScalarProperty Name="PaymentMethodUserAccountCredit" ColumnName="PaymentMethodUserAccountCredit" />
+          <ScalarProperty Name="PaymentMethodDiscount" ColumnName="PaymentMethodDiscount" />
+          <ScalarProperty Name="Discriminator" ColumnName="Discriminator" />
+          <ScalarProperty Name="PaymentMethodMyBills" ColumnName="PaymentMethodMyBills" />
+          <ScalarProperty Name="GatewayCode" ColumnName="GatewayCode" />
+          <ScalarProperty Name="MeansGatewayCode" ColumnName="MeansGatewayCode" />
+          <ScalarProperty Name="ImageUri" ColumnName="ImageUri" />
+          <ScalarProperty Name="EndUserEnabled" ColumnName="EndUserEnabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentMethodAvailabilities">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PaymentMethodAvailability">
+        <MappingFragment StoreEntitySet="PaymentMethodAvailability">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ValidSinceDate" ColumnName="ValidSinceDate" />
+          <ScalarProperty Name="ValidThrought" ColumnName="ValidThrought" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="idPaymentTicketPaymentMethod" ColumnName="idPaymentTicketPaymentMethod" />
+          <ScalarProperty Name="idBusinessDomain" ColumnName="idBusinessDomain" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentTickets">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PaymentTicket">
+        <MappingFragment StoreEntitySet="PaymentTicket">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PaymentTicketState" ColumnName="PaymentTicketState" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+          <ScalarProperty Name="SubtotalPaymentAmount" ColumnName="SubtotalPaymentAmount" />
+          <ScalarProperty Name="TotalPaymentAmount" ColumnName="TotalPaymentAmount" />
+          <ScalarProperty Name="Clienting" ColumnName="Clienting" />
+          <ScalarProperty Name="GatewayProvider" ColumnName="GatewayProvider" />
+          <ScalarProperty Name="GatewayPaymentMethodType" ColumnName="GatewayPaymentMethodType" />
+          <ScalarProperty Name="GatewayPaymentMethod" ColumnName="GatewayPaymentMethod" />
+          <ScalarProperty Name="GatewayTicketId" ColumnName="GatewayTicketId" />
+          <ScalarProperty Name="idPaymentTicketPaymentMethod" ColumnName="idPaymentTicketPaymentMethod" />
+          <ScalarProperty Name="idSubtotalPaymentAmountCurrency" ColumnName="idSubtotalPaymentAmountCurrency" />
+          <ScalarProperty Name="idTotalPaymentAmountCurrency" ColumnName="idTotalPaymentAmountCurrency" />
+          <ScalarProperty Name="PurchaseOrder_id" ColumnName="PurchaseOrder_id" />
+          <ScalarProperty Name="ExceededPaidDate" ColumnName="ExceededPaidDate" />
+          <ScalarProperty Name="CancelledDate" ColumnName="CancelledDate" />
+          <ScalarProperty Name="RejectedDate" ColumnName="RejectedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentTicketGatewayRequests">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PaymentTicketGatewayRequest">
+        <MappingFragment StoreEntitySet="PaymentTicketGatewayRequest">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="IdPurchaseOrder" ColumnName="IdPurchaseOrder" />
+          <ScalarProperty Name="IdPaymentMethod" ColumnName="IdPaymentMethod" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="DateChangeState" ColumnName="DateChangeState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaymentTicketGatewayResponses">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PaymentTicketGatewayResponse">
+        <MappingFragment StoreEntitySet="PaymentTicketGatewayResponse">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="IdTicket" ColumnName="IdTicket" />
+          <ScalarProperty Name="Response" ColumnName="Response" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PricingZones">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PricingZone">
+        <MappingFragment StoreEntitySet="PricingZone">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SAPBillingCode" ColumnName="SAPBillingCode" />
+          <ScalarProperty Name="TextReport" ColumnName="TextReport" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchaseOrders">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PurchaseOrder">
+        <MappingFragment StoreEntitySet="PurchaseOrder">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PurchaseOrderState" ColumnName="PurchaseOrderState" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+          <ScalarProperty Name="Invoiced" ColumnName="Invoiced" />
+          <ScalarProperty Name="idUser" ColumnName="idUser" />
+          <ScalarProperty Name="PublicationId" ColumnName="PublicationId" />
+          <ScalarProperty Name="Clienting" ColumnName="Clienting" />
+          <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+          <ScalarProperty Name="Discriminator" ColumnName="Discriminator" />
+          <ScalarProperty Name="idCustomCurrency" ColumnName="idCustomCurrency" />
+          <ScalarProperty Name="BackOfficePaymentUserId" ColumnName="BackOfficePaymentUserId" />
+          <ScalarProperty Name="InvoicedDate" ColumnName="InvoicedDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchaseOrderItems">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PurchaseOrderItem">
+        <MappingFragment StoreEntitySet="PurchaseOrderItem">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ProductPrice" ColumnName="ProductPrice" />
+          <ScalarProperty Name="TotalAmount" ColumnName="TotalAmount" />
+          <ScalarProperty Name="idProductPriceCurrency" ColumnName="idProductPriceCurrency" />
+          <ScalarProperty Name="PurchaseOrder_id" ColumnName="PurchaseOrder_id" />
+          <ScalarProperty Name="ProductOfferingId" ColumnName="ProductOfferingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PurchaseOrderItemDiscounts">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PurchaseOrderItemDiscount">
+        <MappingFragment StoreEntitySet="PurchaseOrderItemDiscount">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="F_PurchaseOrderItem_Id" ColumnName="F_PurchaseOrderItem_Id" />
+          <ScalarProperty Name="F_Discount_Id" ColumnName="F_Discount_Id" />
+          <ScalarProperty Name="A_PercentajeDiscount" ColumnName="A_PercentajeDiscount" />
+          <ScalarProperty Name="A_AmountDiscount" ColumnName="A_AmountDiscount" />
+          <ScalarProperty Name="A_CreateDate" ColumnName="A_CreateDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SapBillingInfoes">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.SapBillingInfo">
+        <MappingFragment StoreEntitySet="SapBillingInfo">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IdEmpresa" ColumnName="IdEmpresa" />
+          <ScalarProperty Name="IdClienteSap" ColumnName="IdClienteSap" />
+          <ScalarProperty Name="RazonSocial" ColumnName="RazonSocial" />
+          <ScalarProperty Name="Contacto" ColumnName="Contacto" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="NroFactura" ColumnName="NroFactura" />
+          <ScalarProperty Name="FechaFactura" ColumnName="FechaFactura" />
+          <ScalarProperty Name="Importe" ColumnName="Importe" />
+          <ScalarProperty Name="Saldo" ColumnName="Saldo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SapBlacklists">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.SapBlacklist">
+        <MappingFragment StoreEntitySet="SapBlacklist">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Blacklisted_Date" ColumnName="Blacklisted_Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SapZones">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.SapZone">
+        <MappingFragment StoreEntitySet="SapZone">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="SAPZoneCode" ColumnName="SAPZoneCode" />
+          <ScalarProperty Name="PricingZoneId" ColumnName="PricingZoneId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Suscriptions">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.Suscription">
+        <MappingFragment StoreEntitySet="Suscription">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ActivationDate" ColumnName="ActivationDate" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="BilledPeriodsCounter" ColumnName="BilledPeriodsCounter" />
+          <ScalarProperty Name="LastBilling" ColumnName="LastBilling" />
+          <ScalarProperty Name="idAgencyUser" ColumnName="idAgencyUser" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SuscriptionItems">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.SuscriptionItem">
+        <MappingFragment StoreEntitySet="SuscriptionItem">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="Suscription_id" ColumnName="Suscription_id" />
+          <ScalarProperty Name="ProductOfferingId" ColumnName="ProductOfferingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AgenciesContacteds">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.AgenciesContacted">
+        <MappingFragment StoreEntitySet="AgenciesContacted">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="F_PeopleToBeContacted_Id" ColumnName="F_PeopleToBeContacted_Id" />
+          <ScalarProperty Name="A_SentDate" ColumnName="A_SentDate" />
+          <ScalarProperty Name="A_SentMessage" ColumnName="A_SentMessage" />
+          <ScalarProperty Name="A_Recipients" ColumnName="A_Recipients" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AutoPublications">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.AutoPublication">
+        <MappingFragment StoreEntitySet="AutoPublication">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="Default" ColumnName="Default" />
+          <ScalarProperty Name="Discriminator" ColumnName="Discriminator" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AutoPublicationVehicleModelYears">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.AutoPublicationVehicleModelYear">
+        <MappingFragment StoreEntitySet="AutoPublicationVehicleModelYear">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="VehicleModel_Id" ColumnName="VehicleModel_Id" />
+          <ScalarProperty Name="AutoPublication_Id" ColumnName="AutoPublication_Id" />
+          <ScalarProperty Name="YearFrom" ColumnName="YearFrom" />
+          <ScalarProperty Name="YearTo" ColumnName="YearTo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CatalogLevels">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.CatalogLevel">
+        <MappingFragment StoreEntitySet="CatalogLevel">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="A_Description" ColumnName="A_Description" />
+          <ScalarProperty Name="A_ActiveState" ColumnName="A_ActiveState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CatalogMetadatas">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.CatalogMetadata">
+        <MappingFragment StoreEntitySet="CatalogMetadata">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="F_CatalogLevel_Id" ColumnName="F_CatalogLevel_Id" />
+          <ScalarProperty Name="A_Catalog_Id" ColumnName="A_Catalog_Id" />
+          <ScalarProperty Name="A_Country_Id" ColumnName="A_Country_Id" />
+          <ScalarProperty Name="F_MetadataType_Id" ColumnName="F_MetadataType_Id" />
+          <ScalarProperty Name="A_Value" ColumnName="A_Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CatalogSponsors">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.CatalogSponsor">
+        <MappingFragment StoreEntitySet="CatalogSponsor">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ModelId" ColumnName="ModelId" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="Mails" ColumnName="Mails" />
+          <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+          <ScalarProperty Name="EnabledHome" ColumnName="EnabledHome" />
+          <ScalarProperty Name="SmallTag" ColumnName="SmallTag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CatalogSponsorCompares">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.CatalogSponsorCompare">
+        <MappingFragment StoreEntitySet="CatalogSponsorCompare">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ModelId" ColumnName="ModelId" />
+          <ScalarProperty Name="SponsorId" ColumnName="SponsorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContactDatas">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.ContactData">
+        <MappingFragment StoreEntitySet="ContactData">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="A_Name" ColumnName="A_Name" />
+          <ScalarProperty Name="A_Email" ColumnName="A_Email" />
+          <ScalarProperty Name="A_Telephone" ColumnName="A_Telephone" />
+          <ScalarProperty Name="A_AcceptToReceiveInfo" ColumnName="A_AcceptToReceiveInfo" />
+          <ScalarProperty Name="F_Locality_Id" ColumnName="F_Locality_Id" />
+          <ScalarProperty Name="F_Location_Id" ColumnName="F_Location_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Features">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.Feature">
+        <MappingFragment StoreEntitySet="Feature">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="A_FeatureName" ColumnName="A_FeatureName" />
+          <ScalarProperty Name="F_FeaturesGroup_Id" ColumnName="F_FeaturesGroup_Id" />
+          <ScalarProperty Name="A_MayHaveAnEditableValue" ColumnName="A_MayHaveAnEditableValue" />
+          <ScalarProperty Name="A_ActiveState" ColumnName="A_ActiveState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FeatureGroups">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.FeatureGroup">
+        <MappingFragment StoreEntitySet="FeatureGroup">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="A_GroupName" ColumnName="A_GroupName" />
+          <ScalarProperty Name="A_ActiveState" ColumnName="A_ActiveState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FeatureTypes">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.FeatureType">
+        <MappingFragment StoreEntitySet="FeatureType">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="A_Description" ColumnName="A_Description" />
+          <ScalarProperty Name="A_ActiveState" ColumnName="A_ActiveState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GeoLocationItemAutoPublications">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.GeoLocationItemAutoPublication">
+        <MappingFragment StoreEntitySet="GeoLocationItemAutoPublication">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="GeoLocationItemId" ColumnName="GeoLocationItemId" />
+          <ScalarProperty Name="AutoPublicationId" ColumnName="AutoPublicationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ListedVehicles">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.ListedVehicle">
+        <MappingFragment StoreEntitySet="ListedVehicle">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="A_Year" ColumnName="A_Year" />
+          <ScalarProperty Name="A_Country_Id" ColumnName="A_Country_Id" />
+          <ScalarProperty Name="F_VehicleType_Id" ColumnName="F_VehicleType_Id" />
+          <ScalarProperty Name="F_VehicleVersion_Id" ColumnName="F_VehicleVersion_Id" />
+          <ScalarProperty Name="A_SellAs0km" ColumnName="A_SellAs0km" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ListedVehicleFeatures">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.ListedVehicleFeature">
+        <MappingFragment StoreEntitySet="ListedVehicleFeature">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="F_Feature_Id" ColumnName="F_Feature_Id" />
+          <ScalarProperty Name="F_ListedVehicle_Id" ColumnName="F_ListedVehicle_Id" />
+          <ScalarProperty Name="F_FeatureType_Id" ColumnName="F_FeatureType_Id" />
+          <ScalarProperty Name="A_OptionalPrice" ColumnName="A_OptionalPrice" />
+          <ScalarProperty Name="A_OptionalCurrency" ColumnName="A_OptionalCurrency" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ListedVehicleFeatureValues">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.ListedVehicleFeatureValue">
+        <MappingFragment StoreEntitySet="ListedVehicleFeatureValue">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="F_ListedVehiclesFeatures_Id" ColumnName="F_ListedVehiclesFeatures_Id" />
+          <ScalarProperty Name="A_Value" ColumnName="A_Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ListingSponsors">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.ListingSponsor">
+        <MappingFragment StoreEntitySet="ListingSponsor">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="User_Id" ColumnName="User_Id" />
+          <ScalarProperty Name="PublicationOrder_Id" ColumnName="PublicationOrder_Id" />
+          <ScalarProperty Name="ActivationDate" ColumnName="ActivationDate" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ListingSponsorGeoLocationItems">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.ListingSponsorGeoLocationItem">
+        <MappingFragment StoreEntitySet="ListingSponsorGeoLocationItem">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="GeoLocationItemId" ColumnName="GeoLocationItemId" />
+          <ScalarProperty Name="ListingSponsorId" ColumnName="ListingSponsorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ListingSponsorVehicleBrands">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.ListingSponsorVehicleBrand">
+        <MappingFragment StoreEntitySet="ListingSponsorVehicleBrand">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="VehicleBrandId" ColumnName="VehicleBrandId" />
+          <ScalarProperty Name="ListingSponsorId" ColumnName="ListingSponsorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ListingSponsorVehicleModelYears">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.ListingSponsorVehicleModelYear">
+        <MappingFragment StoreEntitySet="ListingSponsorVehicleModelYear">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="VehicleModel_Id" ColumnName="VehicleModel_Id" />
+          <ScalarProperty Name="ListingSponsor_Id" ColumnName="ListingSponsor_Id" />
+          <ScalarProperty Name="YearFrom" ColumnName="YearFrom" />
+          <ScalarProperty Name="YearTo" ColumnName="YearTo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Locations">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.Location">
+        <MappingFragment StoreEntitySet="Location">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="F_LocationType_Id" ColumnName="F_LocationType_Id" />
+          <ScalarProperty Name="F_GeolocationItem_Id" ColumnName="F_GeolocationItem_Id" />
+          <ScalarProperty Name="F_PrincingZone_Id" ColumnName="F_PrincingZone_Id" />
+          <ScalarProperty Name="A_ShowOrder" ColumnName="A_ShowOrder" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LocationTypes">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.LocationType">
+        <MappingFragment StoreEntitySet="LocationType">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="A_Description" ColumnName="A_Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MetadataTypes">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.MetadataType">
+        <MappingFragment StoreEntitySet="MetadataType">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="A_Description" ColumnName="A_Description" />
+          <ScalarProperty Name="A_Code" ColumnName="A_Code" />
+          <ScalarProperty Name="A_ActiveState" ColumnName="A_ActiveState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PeopleContacteds">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PeopleContacted">
+        <MappingFragment StoreEntitySet="PeopleContacted">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="F_PeopleToBeContacted_Id" ColumnName="F_PeopleToBeContacted_Id" />
+          <ScalarProperty Name="A_SentDate" ColumnName="A_SentDate" />
+          <ScalarProperty Name="A_SentMessage" ColumnName="A_SentMessage" />
+          <ScalarProperty Name="A_Recipient" ColumnName="A_Recipient" />
+          <ScalarProperty Name="F_AgencyUser_Id" ColumnName="F_AgencyUser_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PeopleToBeContacteds">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PeopleToBeContacted">
+        <MappingFragment StoreEntitySet="PeopleToBeContacted">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="F_VehicleModel_Id" ColumnName="F_VehicleModel_Id" />
+          <ScalarProperty Name="F_ContactData_Id" ColumnName="F_ContactData_Id" />
+          <ScalarProperty Name="A_ContactDate" ColumnName="A_ContactDate" />
+          <ScalarProperty Name="A_Message" ColumnName="A_Message" />
+          <ScalarProperty Name="F_BannerCampaign_Id" ColumnName="F_BannerCampaign_Id" />
+          <ScalarProperty Name="F_Alert_Id" ColumnName="F_Alert_Id" />
+          <ScalarProperty Name="A_LandingVehicleModel_Id" ColumnName="A_LandingVehicleModel_Id" />
+          <ScalarProperty Name="F_AgencyCampaign_Id" ColumnName="F_AgencyCampaign_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VehicleBrandAutoPublications">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.VehicleBrandAutoPublication">
+        <MappingFragment StoreEntitySet="VehicleBrandAutoPublication">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="VehicleBrandId" ColumnName="VehicleBrandId" />
+          <ScalarProperty Name="AutoPublicationId" ColumnName="AutoPublicationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VehicleModelSellerClients">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.VehicleModelSellerClient">
+        <MappingFragment StoreEntitySet="VehicleModelSellerClient">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="F_VehicleModel_Id" ColumnName="F_VehicleModel_Id" />
+          <ScalarProperty Name="F_User_Id" ColumnName="F_User_Id" />
+          <ScalarProperty Name="A_ActiveState" ColumnName="A_ActiveState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VehicleTypes">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.VehicleType">
+        <MappingFragment StoreEntitySet="VehicleType">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="A_Description" ColumnName="A_Description" />
+          <ScalarProperty Name="A_ActiveState" ColumnName="A_ActiveState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Campaigns">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.Campaign">
+        <MappingFragment StoreEntitySet="Campaign">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="A_Name" ColumnName="A_Name" />
+          <ScalarProperty Name="A_UrlSuffix" ColumnName="A_UrlSuffix" />
+          <ScalarProperty Name="A_LandingEnabled" ColumnName="A_LandingEnabled" />
+          <ScalarProperty Name="A_DueDate" ColumnName="A_DueDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clients">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.Client">
+        <MappingFragment StoreEntitySet="Client">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Cuit" ColumnName="Cuit" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="TaxCondition" ColumnName="TaxCondition" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="TaxStreet" ColumnName="TaxStreet" />
+          <ScalarProperty Name="TaxStreetNumber" ColumnName="TaxStreetNumber" />
+          <ScalarProperty Name="TaxFloor" ColumnName="TaxFloor" />
+          <ScalarProperty Name="TaxDepartment" ColumnName="TaxDepartment" />
+          <ScalarProperty Name="TaxZipCode" ColumnName="TaxZipCode" />
+          <ScalarProperty Name="TaxGeoLocation" ColumnName="TaxGeoLocation" />
+          <ScalarProperty Name="SapBillingCode" ColumnName="SapBillingCode" />
+          <ScalarProperty Name="TaxName" ColumnName="TaxName" />
+          <ScalarProperty Name="GeoLocation" ColumnName="GeoLocation" />
+          <ScalarProperty Name="PhoneNumberId" ColumnName="PhoneNumberId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerGroups">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.CustomerGroup">
+        <MappingFragment StoreEntitySet="CustomerGroup">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="A_GroupName" ColumnName="A_GroupName" />
+          <ScalarProperty Name="A_PriorityLevel" ColumnName="A_PriorityLevel" />
+          <ScalarProperty Name="A_Discriminator" ColumnName="A_Discriminator" />
+          <ScalarProperty Name="A_ActiveState" ColumnName="A_ActiveState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sites">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.Site">
+        <MappingFragment StoreEntitySet="Site">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Client" ColumnName="Client" />
+          <ScalarProperty Name="SapAdvertiserCode" ColumnName="SapAdvertiserCode" />
+          <ScalarProperty Name="Street" ColumnName="Street" />
+          <ScalarProperty Name="StreetNumber" ColumnName="StreetNumber" />
+          <ScalarProperty Name="Floor" ColumnName="Floor" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+          <ScalarProperty Name="GeoLocationItem" ColumnName="GeoLocationItem" />
+          <ScalarProperty Name="Headquarter" ColumnName="Headquarter" />
+          <ScalarProperty Name="HasStore" ColumnName="HasStore" />
+          <ScalarProperty Name="HasLogo" ColumnName="HasLogo" />
+          <ScalarProperty Name="StoreUrl" ColumnName="StoreUrl" />
+          <ScalarProperty Name="AboutTheAgency" ColumnName="AboutTheAgency" />
+          <ScalarProperty Name="LocationCoordinates" ColumnName="LocationCoordinates" />
+          <ScalarProperty Name="LogoId" ColumnName="LogoId" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TaxConditions">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.TaxCondition">
+        <MappingFragment StoreEntitySet="TaxCondition">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="SapCodeTax" ColumnName="SapCodeTax" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserCustomerGroups">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.UserCustomerGroup">
+        <MappingFragment StoreEntitySet="UserCustomerGroup">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="F_Customer_Id" ColumnName="F_Customer_Id" />
+          <ScalarProperty Name="F_CustomerGroup_Id" ColumnName="F_CustomerGroup_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuditRememberDays">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.AuditRememberDay">
+        <MappingFragment StoreEntitySet="AuditRememberDay">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RememberDayId" ColumnName="RememberDayId" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="DateOfEntryIntoTheState" ColumnName="DateOfEntryIntoTheState" />
+          <ScalarProperty Name="SentMail" ColumnName="SentMail" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PhoneContacts">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PhoneContact">
+        <MappingFragment StoreEntitySet="PhoneContact">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PublicationId" ColumnName="PublicationId" />
+          <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+          <ScalarProperty Name="SourceSectionId" ColumnName="SourceSectionId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="CallerPhoneNumber" ColumnName="CallerPhoneNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Remembers">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.Remember">
+        <MappingFragment StoreEntitySet="Remember">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Discriminator" ColumnName="Discriminator" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RememberDays">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.RememberDay">
+        <MappingFragment StoreEntitySet="RememberDay">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RememberId" ColumnName="RememberId" />
+          <ScalarProperty Name="ContactDate" ColumnName="ContactDate" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="KeyGuidMail" ColumnName="KeyGuidMail" />
+          <ScalarProperty Name="ConversationId" ColumnName="ConversationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RememberDayItems">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.RememberDayItem">
+        <MappingFragment StoreEntitySet="RememberDayItem">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="RememberDayId" ColumnName="RememberDayId" />
+          <ScalarProperty Name="GeoStateId" ColumnName="GeoStateId" />
+          <ScalarProperty Name="GeoRegionId" ColumnName="GeoRegionId" />
+          <ScalarProperty Name="GeoCityId" ColumnName="GeoCityId" />
+          <ScalarProperty Name="PricingZoneId" ColumnName="PricingZoneId" />
+          <ScalarProperty Name="ConversationId" ColumnName="ConversationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContactButtons">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.ContactButton">
+        <MappingFragment StoreEntitySet="ContactButton">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContactButtonConfigurations">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.ContactButtonConfiguration">
+        <MappingFragment StoreEntitySet="ContactButtonConfiguration">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ContactButtonId" ColumnName="ContactButtonId" />
+          <ScalarProperty Name="PublishableItemTypeId" ColumnName="PublishableItemTypeId" />
+          <ScalarProperty Name="UserTypeId" ColumnName="UserTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Conversations">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.Conversation">
+        <MappingFragment StoreEntitySet="Conversation">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="AcceptsToBeContacted" ColumnName="AcceptsToBeContacted" />
+          <ScalarProperty Name="ContactName" ColumnName="ContactName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="SourceConversationId" ColumnName="SourceConversationId" />
+          <ScalarProperty Name="PublicationId" ColumnName="PublicationId" />
+          <ScalarProperty Name="SiteId" ColumnName="SiteId" />
+          <ScalarProperty Name="ConversationParentId" ColumnName="ConversationParentId" />
+          <ScalarProperty Name="KeyGuidContact" ColumnName="KeyGuidContact" />
+          <ScalarProperty Name="AuthorId" ColumnName="AuthorId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Messages">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.Message">
+        <MappingFragment StoreEntitySet="Message">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ConversationId" ColumnName="ConversationId" />
+          <ScalarProperty Name="Ip" ColumnName="Ip" />
+          <ScalarProperty Name="Content" ColumnName="Content" />
+          <ScalarProperty Name="AuthorId" ColumnName="AuthorId" />
+          <ScalarProperty Name="Timestamp" ColumnName="Timestamp" />
+          <ScalarProperty Name="SourceSectionId" ColumnName="SourceSectionId" />
+          <ScalarProperty Name="SourceSectionInModal" ColumnName="SourceSectionInModal" />
+          <ScalarProperty Name="MessageTypeId" ColumnName="MessageTypeId" />
+          <ScalarProperty Name="MessageSubTypeId" ColumnName="MessageSubTypeId" />
+          <ScalarProperty Name="Viewed" ColumnName="Viewed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AttributeDefinitions">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.AttributeDefinition">
+        <MappingFragment StoreEntitySet="AttributeDefinition">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="KeyString" ColumnName="KeyString" />
+          <ScalarProperty Name="VehicleSpecCategoryId" ColumnName="VehicleSpecCategoryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BrandSavingPlans">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.BrandSavingPlan">
+        <MappingFragment StoreEntitySet="BrandSavingPlan">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="A_CommercialName" ColumnName="A_CommercialName" />
+          <ScalarProperty Name="F_Brand_Id" ColumnName="F_Brand_Id" />
+          <ScalarProperty Name="A_Visible" ColumnName="A_Visible" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BusinessDomains">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.BusinessDomain">
+        <MappingFragment StoreEntitySet="BusinessDomain">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="idDefaultCurrency" ColumnName="idDefaultCurrency" />
+          <ScalarProperty Name="SecondLevelDomain" ColumnName="SecondLevelDomain" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Colours">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.Colour">
+        <MappingFragment StoreEntitySet="Colour">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Currencies">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.Currency">
+        <MappingFragment StoreEntitySet="Currency">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="idSymbol" ColumnName="idSymbol" />
+          <ScalarProperty Name="Exchange" ColumnName="Exchange" />
+          <ScalarProperty Name="SourceCurrencyId" ColumnName="SourceCurrencyId" />
+          <ScalarProperty Name="TargetCurrencyId" ColumnName="TargetCurrencyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Fuels">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.Fuel">
+        <MappingFragment StoreEntitySet="Fuel">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SeoFriendlyName" ColumnName="SeoFriendlyName" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GeoLocationItems">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.GeoLocationItem">
+        <MappingFragment StoreEntitySet="GeoLocationItem">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SeoFriendlyName" ColumnName="SeoFriendlyName" />
+          <ScalarProperty Name="idGeoLocationItemType" ColumnName="idGeoLocationItemType" />
+          <ScalarProperty Name="idGeoLocationParentItem" ColumnName="idGeoLocationParentItem" />
+          <ScalarProperty Name="idSapZone" ColumnName="idSapZone" />
+          <ScalarProperty Name="OrderShow" ColumnName="OrderShow" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GeoLocationItemTypes">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.GeoLocationItemType">
+        <MappingFragment StoreEntitySet="GeoLocationItemType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GeoLocationRings">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.GeoLocationRing">
+        <MappingFragment StoreEntitySet="GeoLocationRing">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="A_Name" ColumnName="A_Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ImageFormats">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.ImageFormat">
+        <MappingFragment StoreEntitySet="ImageFormat">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FormatKey" ColumnName="FormatKey" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="FormatName" ColumnName="FormatName" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SavingPlanTypes">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.SavingPlanType">
+        <MappingFragment StoreEntitySet="SavingPlanType">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="A_Description" ColumnName="A_Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SpecialAttributeDefinitions">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.SpecialAttributeDefinition">
+        <MappingFragment StoreEntitySet="SpecialAttributeDefinition">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="KeyString" ColumnName="KeyString" />
+          <ScalarProperty Name="SavingPlanFeature" ColumnName="SavingPlanFeature" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VehicleBrands">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.VehicleBrand">
+        <MappingFragment StoreEntitySet="VehicleBrand">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SeoFriendlyName" ColumnName="SeoFriendlyName" />
+          <ScalarProperty Name="LastChangeDate" ColumnName="LastChangeDate" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VehicleModels">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.VehicleModel">
+        <MappingFragment StoreEntitySet="VehicleModel">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SeoFriendlyName" ColumnName="SeoFriendlyName" />
+          <ScalarProperty Name="idVehicleBrand" ColumnName="idVehicleBrand" />
+          <ScalarProperty Name="LastChangeDate" ColumnName="LastChangeDate" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="isPublishableInLanding" ColumnName="isPublishableInLanding" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VehicleSegments">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.VehicleSegment">
+        <MappingFragment StoreEntitySet="VehicleSegment">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SeoFriendlyName" ColumnName="SeoFriendlyName" />
+          <ScalarProperty Name="OrderHomeSearch" ColumnName="OrderHomeSearch" />
+          <ScalarProperty Name="F_Hub_Rubro_Id" ColumnName="F_Hub_Rubro_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VehicleSpecsCategories">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.VehicleSpecsCategory">
+        <MappingFragment StoreEntitySet="VehicleSpecsCategory">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="idVehicleSpecsCategoryParent" ColumnName="idVehicleSpecsCategoryParent" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VehicleVersions">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.VehicleVersion">
+        <MappingFragment StoreEntitySet="VehicleVersion">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SeoFriendlyName" ColumnName="SeoFriendlyName" />
+          <ScalarProperty Name="idVehicleModel" ColumnName="idVehicleModel" />
+          <ScalarProperty Name="idVehicleSegment" ColumnName="idVehicleSegment" />
+          <ScalarProperty Name="LastChangeDate" ColumnName="LastChangeDate" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="dtproperties">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.dtproperty">
+        <MappingFragment StoreEntitySet="dtproperties">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="objectid" ColumnName="objectid" />
+          <ScalarProperty Name="property" ColumnName="property" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="uvalue" ColumnName="uvalue" />
+          <ScalarProperty Name="lvalue" ColumnName="lvalue" />
+          <ScalarProperty Name="version" ColumnName="version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="proofa2">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.proofa2">
+        <MappingFragment StoreEntitySet="proofa2">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BasicOperations">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.BasicOperation">
+        <MappingFragment StoreEntitySet="BasicOperation">
+          <ScalarProperty Name="P_id" ColumnName="P_id" />
+          <ScalarProperty Name="A_Description" ColumnName="A_Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClientStates">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.ClientState">
+        <MappingFragment StoreEntitySet="ClientState">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CreditPackStates">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.CreditPackState">
+        <MappingFragment StoreEntitySet="CreditPackState">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MessageKeyBrokers">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.MessageKeyBroker">
+        <MappingFragment StoreEntitySet="MessageKeyBroker">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MessageSubTypes">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.MessageSubType">
+        <MappingFragment StoreEntitySet="MessageSubType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MessageTypes">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.MessageType">
+        <MappingFragment StoreEntitySet="MessageType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PublicationStates">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PublicationState">
+        <MappingFragment StoreEntitySet="PublicationState">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PublicationTypes">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PublicationType">
+        <MappingFragment StoreEntitySet="PublicationType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SiteTypes">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.SiteType">
+        <MappingFragment StoreEntitySet="SiteType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SourceConversations">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.SourceConversation">
+        <MappingFragment StoreEntitySet="SourceConversation">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SourceSections">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.SourceSection">
+        <MappingFragment StoreEntitySet="SourceSection">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AppliedDiscountCoupons">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.AppliedDiscountCoupon">
+        <MappingFragment StoreEntitySet="AppliedDiscountCoupon">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="idDiscountCoupon" ColumnName="idDiscountCoupon" />
+          <ScalarProperty Name="ExchangeDate" ColumnName="ExchangeDate" />
+          <ScalarProperty Name="idUserWhoSpent" ColumnName="idUserWhoSpent" />
+          <ScalarProperty Name="PurchaseOrder_id" ColumnName="PurchaseOrder_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuditClarin365TrackOfTransaction">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.AuditClarin365TrackOfTransaction">
+        <MappingFragment StoreEntitySet="AuditClarin365TrackOfTransaction">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="F_Clarin365TrackOfTransaction_Id" ColumnName="F_Clarin365TrackOfTransaction_Id" />
+          <ScalarProperty Name="A_DateOfEntryIntoTheState" ColumnName="A_DateOfEntryIntoTheState" />
+          <ScalarProperty Name="F_State_Id" ColumnName="F_State_Id" />
+          <ScalarProperty Name="A_Response" ColumnName="A_Response" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clarin365TrackOfTransaction">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.Clarin365TrackOfTransaction">
+        <MappingFragment StoreEntitySet="Clarin365TrackOfTransaction">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="F_PurchaseOrder_Id" ColumnName="F_PurchaseOrder_Id" />
+          <ScalarProperty Name="A_CredencialCode" ColumnName="A_CredencialCode" />
+          <ScalarProperty Name="F_State_Id" ColumnName="F_State_Id" />
+          <ScalarProperty Name="A_InputCodeDate" ColumnName="A_InputCodeDate" />
+          <ScalarProperty Name="A_PaidDate" ColumnName="A_PaidDate" />
+          <ScalarProperty Name="A_IdSucursal" ColumnName="A_IdSucursal" />
+          <ScalarProperty Name="A_IdBeneficio" ColumnName="A_IdBeneficio" />
+          <ScalarProperty Name="A_TransactionType" ColumnName="A_TransactionType" />
+          <ScalarProperty Name="A_Amount" ColumnName="A_Amount" />
+          <ScalarProperty Name="A_DiscountAmount" ColumnName="A_DiscountAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Discounts">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.Discount">
+        <MappingFragment StoreEntitySet="Discount">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="idBusinessDomain" ColumnName="idBusinessDomain" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="IsAutomatic" ColumnName="IsAutomatic" />
+          <ScalarProperty Name="AvailableSinceDate" ColumnName="AvailableSinceDate" />
+          <ScalarProperty Name="AvailableToDate" ColumnName="AvailableToDate" />
+          <ScalarProperty Name="DurationInDays" ColumnName="DurationInDays" />
+          <ScalarProperty Name="idProduct" ColumnName="idProduct" />
+          <ScalarProperty Name="CodeSap" ColumnName="CodeSap" />
+          <ScalarProperty Name="AutoGenerateDiscountCouponCode" ColumnName="AutoGenerateDiscountCouponCode" />
+          <ScalarProperty Name="DueDateDiscountCoupon" ColumnName="DueDateDiscountCoupon" />
+          <ScalarProperty Name="IsCombined" ColumnName="IsCombined" />
+          <ScalarProperty Name="Percentage" ColumnName="Percentage" />
+          <ScalarProperty Name="KeyString" ColumnName="KeyString" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DiscountCoupons">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.DiscountCoupon">
+        <MappingFragment StoreEntitySet="DiscountCoupon">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CouponIdentificationCode" ColumnName="CouponIdentificationCode" />
+          <ScalarProperty Name="ValidFromDate" ColumnName="ValidFromDate" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="idDiscount" ColumnName="idDiscount" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="idUser" ColumnName="idUser" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CodeBatch" ColumnName="CodeBatch" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="QuantityUsed" ColumnName="QuantityUsed" />
+          <ScalarProperty Name="CreatingUser" ColumnName="CreatingUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ZonalSupplementAreas">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.ZonalSupplementArea">
+        <MappingFragment StoreEntitySet="ZonalSupplementArea">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HubColourConversions">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.HubColourConversion">
+        <MappingFragment StoreEntitySet="HubColourConversion">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="HubCode" ColumnName="HubCode" />
+          <ScalarProperty Name="DeAutosCode" ColumnName="DeAutosCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HubCurrencyConversions">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.HubCurrencyConversion">
+        <MappingFragment StoreEntitySet="HubCurrencyConversion">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="HubCode" ColumnName="HubCode" />
+          <ScalarProperty Name="DeAutosCode" ColumnName="DeAutosCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HubFuelConversions">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.HubFuelConversion">
+        <MappingFragment StoreEntitySet="HubFuelConversion">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="HubCode" ColumnName="HubCode" />
+          <ScalarProperty Name="DeAutosCode" ColumnName="DeAutosCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HubGeoLocationItemConversions">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.HubGeoLocationItemConversion">
+        <MappingFragment StoreEntitySet="HubGeoLocationItemConversion">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="HubCode" ColumnName="HubCode" />
+          <ScalarProperty Name="DeAutosCode" ColumnName="DeAutosCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HubProcessPublications">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.HubProcessPublication">
+        <MappingFragment StoreEntitySet="HubProcessPublication">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="HubPublicationId" ColumnName="HubPublicationId" />
+          <ScalarProperty Name="PublicationId" ColumnName="PublicationId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="IdProcess" ColumnName="IdProcess" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HubProductConversions">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.HubProductConversion">
+        <MappingFragment StoreEntitySet="HubProductConversion">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="HubCode" ColumnName="HubCode" />
+          <ScalarProperty Name="ProductId" ColumnName="ProductId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HubPublicationErrorDetails">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.HubPublicationErrorDetail">
+        <MappingFragment StoreEntitySet="HubPublicationErrorDetail">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="HubPublicationId" ColumnName="HubPublicationId" />
+          <ScalarProperty Name="ErrorDetails" ColumnName="ErrorDetails" />
+          <ScalarProperty Name="IdProcess" ColumnName="IdProcess" />
+          <ScalarProperty Name="ImporterProcessLog_id" ColumnName="ImporterProcessLog_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HubRubroes">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.HubRubro">
+        <MappingFragment StoreEntitySet="HubRubro">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="A_Codigo" ColumnName="A_Codigo" />
+          <ScalarProperty Name="A_Descripcion" ColumnName="A_Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HubVehicleModelConversions">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.HubVehicleModelConversion">
+        <MappingFragment StoreEntitySet="HubVehicleModelConversion">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="HubCode" ColumnName="HubCode" />
+          <ScalarProperty Name="DeAutosCode" ColumnName="DeAutosCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HubVehicleSpecConversions">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.HubVehicleSpecConversion">
+        <MappingFragment StoreEntitySet="HubVehicleSpecConversion">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="HubCode" ColumnName="HubCode" />
+          <ScalarProperty Name="DeAutosCode" ColumnName="DeAutosCode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ImporterProcessLogs">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.ImporterProcessLog">
+        <MappingFragment StoreEntitySet="ImporterProcessLog">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="IdLastProcessed" ColumnName="IdLastProcessed" />
+          <ScalarProperty Name="ImporterType" ColumnName="ImporterType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaperBrandModelConversions">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PaperBrandModelConversion">
+        <MappingFragment StoreEntitySet="PaperBrandModelConversion">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MarcaClarin" ColumnName="MarcaClarin" />
+          <ScalarProperty Name="ModeloClarin" ColumnName="ModeloClarin" />
+          <ScalarProperty Name="VersionClarin" ColumnName="VersionClarin" />
+          <ScalarProperty Name="MarcaDeautos" ColumnName="MarcaDeautos" />
+          <ScalarProperty Name="ModeloDeautos" ColumnName="ModeloDeautos" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PublicationExternalAssociations">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PublicationExternalAssociation">
+        <MappingFragment StoreEntitySet="PublicationExternalAssociation">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="KeyString" ColumnName="KeyString" />
+          <ScalarProperty Name="PublicationId" ColumnName="PublicationId" />
+          <ScalarProperty Name="PublicationProviderId" ColumnName="PublicationProviderId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PublicationProviders">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PublicationProvider">
+        <MappingFragment StoreEntitySet="PublicationProvider">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IndexAttributeEntities">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.IndexAttributeEntity">
+        <MappingFragment StoreEntitySet="IndexAttributeEntity">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Attr_value_type" ColumnName="Attr_value_type" />
+          <ScalarProperty Name="Attr_id" ColumnName="Attr_id" />
+          <ScalarProperty Name="Attr_value" ColumnName="Attr_value" />
+          <ScalarProperty Name="Attr_type" ColumnName="Attr_type" />
+          <ScalarProperty Name="IndexEntity_id" ColumnName="IndexEntity_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IndexEntities">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.IndexEntity">
+        <MappingFragment StoreEntitySet="IndexEntity">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FuelId" ColumnName="FuelId" />
+          <ScalarProperty Name="ModelId" ColumnName="ModelId" />
+          <ScalarProperty Name="VersionId" ColumnName="VersionId" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="CurrencyId" ColumnName="CurrencyId" />
+          <ScalarProperty Name="GeoStateId" ColumnName="GeoStateId" />
+          <ScalarProperty Name="GeoRegionId" ColumnName="GeoRegionId" />
+          <ScalarProperty Name="GeoCityId" ColumnName="GeoCityId" />
+          <ScalarProperty Name="UploadedPhotosQuantity" ColumnName="UploadedPhotosQuantity" />
+          <ScalarProperty Name="Km" ColumnName="Km" />
+          <ScalarProperty Name="ColorId" ColumnName="ColorId" />
+          <ScalarProperty Name="PublicationId" ColumnName="PublicationId" />
+          <ScalarProperty Name="VisitCount" ColumnName="VisitCount" />
+          <ScalarProperty Name="SearchResultSection" ColumnName="SearchResultSection" />
+          <ScalarProperty Name="IndexWeight" ColumnName="IndexWeight" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="BrandId" ColumnName="BrandId" />
+          <ScalarProperty Name="SegmentId" ColumnName="SegmentId" />
+          <ScalarProperty Name="PublishableItemTypeId" ColumnName="PublishableItemTypeId" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="PriceAbsolute" ColumnName="PriceAbsolute" />
+          <ScalarProperty Name="Sellercomments" ColumnName="Sellercomments" />
+          <ScalarProperty Name="PublishableItemId" ColumnName="PublishableItemId" />
+          <ScalarProperty Name="LastIndexTime" ColumnName="LastIndexTime" />
+          <ScalarProperty Name="CheckPrice" ColumnName="CheckPrice" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="PublicationGroupedByTypeAndWeight" ColumnName="PublicationGroupedByTypeAndWeight" />
+          <ScalarProperty Name="Financing" ColumnName="Financing" />
+          <ScalarProperty Name="PureFeeValue" ColumnName="PureFeeValue" />
+          <ScalarProperty Name="AverageFeeValue" ColumnName="AverageFeeValue" />
+          <ScalarProperty Name="NumberOfFees" ColumnName="NumberOfFees" />
+          <ScalarProperty Name="NumberOfAgreedDeliveryFee" ColumnName="NumberOfAgreedDeliveryFee" />
+          <ScalarProperty Name="SavingPlanTypeId" ColumnName="SavingPlanTypeId" />
+          <ScalarProperty Name="NumberOfPaidFees" ColumnName="NumberOfPaidFees" />
+          <ScalarProperty Name="TransferAmmount" ColumnName="TransferAmmount" />
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="ShowInHome" ColumnName="ShowInHome" />
+          <ScalarProperty Name="MessageContactCount" ColumnName="MessageContactCount" />
+          <ScalarProperty Name="BrandName" ColumnName="BrandName" />
+          <ScalarProperty Name="ModelName" ColumnName="ModelName" />
+          <ScalarProperty Name="VersionName" ColumnName="VersionName" />
+          <ScalarProperty Name="SegmentName" ColumnName="SegmentName" />
+          <ScalarProperty Name="GeoStateName" ColumnName="GeoStateName" />
+          <ScalarProperty Name="GeoRegionName" ColumnName="GeoRegionName" />
+          <ScalarProperty Name="GeoCityName" ColumnName="GeoCityName" />
+          <ScalarProperty Name="ItemConditionName" ColumnName="ItemConditionName" />
+          <ScalarProperty Name="ColorName" ColumnName="ColorName" />
+          <ScalarProperty Name="FuelName" ColumnName="FuelName" />
+          <ScalarProperty Name="IsPublicationClone" ColumnName="IsPublicationClone" />
+          <ScalarProperty Name="AutoRepublication" ColumnName="AutoRepublication" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="IsSavingPlanTransfer" ColumnName="IsSavingPlanTransfer" />
+          <ScalarProperty Name="Plate" ColumnName="Plate" />
+          <ScalarProperty Name="PaymentOptionId" ColumnName="PaymentOptionId" />
+          <ScalarProperty Name="AdvancePayment" ColumnName="AdvancePayment" />
+          <ScalarProperty Name="SinceQuota" ColumnName="SinceQuota" />
+          <ScalarProperty Name="Patenting" ColumnName="Patenting" />
+          <ScalarProperty Name="VideoUrl" ColumnName="VideoUrl" />
+          <ScalarProperty Name="CanDelete" ColumnName="CanDelete" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IndexFeatureEntities">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.IndexFeatureEntity">
+        <MappingFragment StoreEntitySet="IndexFeatureEntity">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="IndexEntity_Id" ColumnName="IndexEntity_Id" />
+          <ScalarProperty Name="Feature_Id" ColumnName="Feature_Id" />
+          <ScalarProperty Name="Feature_Key" ColumnName="Feature_Key" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LocalizedMessages">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.LocalizedMessage">
+        <MappingFragment StoreEntitySet="LocalizedMessage">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="LocalizedMessageFormId" ColumnName="LocalizedMessageFormId" />
+          <ScalarProperty Name="BusinessDomainId" ColumnName="BusinessDomainId" />
+          <ScalarProperty Name="Key" ColumnName="Key" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LocalizedMessageForms">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.LocalizedMessageForm">
+        <MappingFragment StoreEntitySet="LocalizedMessageForm">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ContactServiceTemplates">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.ContactServiceTemplate">
+        <MappingFragment StoreEntitySet="ContactServiceTemplate">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MailDepositBlacklists">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.MailDepositBlacklist">
+        <MappingFragment StoreEntitySet="MailDepositBlacklist">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Blacklisted_Date" ColumnName="Blacklisted_Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MessageActionAfterSents">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.MessageActionAfterSent">
+        <MappingFragment StoreEntitySet="MessageActionAfterSent">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MessageBrokers">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.MessageBroker">
+        <MappingFragment StoreEntitySet="MessageBroker">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MessageTemplateId" ColumnName="MessageTemplateId" />
+          <ScalarProperty Name="RedirectMessage" ColumnName="RedirectMessage" />
+          <ScalarProperty Name="BusinessDomainId" ColumnName="BusinessDomainId" />
+          <ScalarProperty Name="MessageKeyBrokerId" ColumnName="MessageKeyBrokerId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MessageQueues">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.MessageQueue">
+        <MappingFragment StoreEntitySet="MessageQueue">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MessageTemplateId" ColumnName="MessageTemplateId" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="MessageQueueStatusId" ColumnName="MessageQueueStatusId" />
+          <ScalarProperty Name="ToAddress" ColumnName="ToAddress" />
+          <ScalarProperty Name="ReplyTo" ColumnName="ReplyTo" />
+          <ScalarProperty Name="MessageId" ColumnName="MessageId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MessageQueueParams">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.MessageQueueParam">
+        <MappingFragment StoreEntitySet="MessageQueueParam">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MessageQueueId" ColumnName="MessageQueueId" />
+          <ScalarProperty Name="Key" ColumnName="Key" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MessageQueueResponseDetails">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.MessageQueueResponseDetail">
+        <MappingFragment StoreEntitySet="MessageQueueResponseDetail">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MessageQueueId" ColumnName="MessageQueueId" />
+          <ScalarProperty Name="SendDate" ColumnName="SendDate" />
+          <ScalarProperty Name="Response" ColumnName="Response" />
+          <ScalarProperty Name="MessageQueueStatusId" ColumnName="MessageQueueStatusId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MessageQueueStatus">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.MessageQueueStatu">
+        <MappingFragment StoreEntitySet="MessageQueueStatus">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MessageSendTypes">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.MessageSendType">
+        <MappingFragment StoreEntitySet="MessageSendType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MessageTemplates">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.MessageTemplate">
+        <MappingFragment StoreEntitySet="MessageTemplate">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="MessageSendTypeId" ColumnName="MessageSendTypeId" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+          <ScalarProperty Name="SendWarning" ColumnName="SendWarning" />
+          <ScalarProperty Name="MessageActionAfterSentId" ColumnName="MessageActionAfterSentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PlanisysTemplates">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PlanisysTemplate">
+        <MappingFragment StoreEntitySet="PlanisysTemplate">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SmtpTemplates">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.SmtpTemplate">
+        <MappingFragment StoreEntitySet="SmtpTemplate">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FromName" ColumnName="FromName" />
+          <ScalarProperty Name="FromAddress" ColumnName="FromAddress" />
+          <ScalarProperty Name="Body" ColumnName="Body" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DataCarConversionReports">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.DataCarConversionReport">
+        <MappingFragment StoreEntitySet="DataCarConversionReport">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PublicationId" ColumnName="PublicationId" />
+          <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+          <ScalarProperty Name="Count" ColumnName="Count" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DaxInfoes">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.DaxInfo">
+        <MappingFragment StoreEntitySet="DaxInfo">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SectionName" ColumnName="SectionName" />
+          <ScalarProperty Name="DaxTagName" ColumnName="DaxTagName" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PublicationVisits">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PublicationVisit">
+        <MappingFragment StoreEntitySet="PublicationVisits">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PublicationId" ColumnName="PublicationId" />
+          <ScalarProperty Name="TimeStamp" ColumnName="TimeStamp" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MobileAppInfoes">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.MobileAppInfo">
+        <MappingFragment StoreEntitySet="MobileAppInfo">
+          <ScalarProperty Name="Platform" ColumnName="Platform" />
+          <ScalarProperty Name="AppName" ColumnName="AppName" />
+          <ScalarProperty Name="MinSupportedVersion" ColumnName="MinSupportedVersion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProcessSchedulers">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.ProcessScheduler">
+        <MappingFragment StoreEntitySet="ProcessScheduler">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ExecutionToDay" ColumnName="ExecutionToDay" />
+          <ScalarProperty Name="ProcessTaskId" ColumnName="ProcessTaskId" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Executed" ColumnName="Executed" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProcessTasks">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.ProcessTask">
+        <MappingFragment StoreEntitySet="ProcessTask">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Key" ColumnName="Key" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CreditPacks">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.CreditPack">
+        <MappingFragment StoreEntitySet="CreditPack">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="ProductOfferingId" ColumnName="ProductOfferingId" />
+          <ScalarProperty Name="PurchaseOrderId" ColumnName="PurchaseOrderId" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ActivationDate" ColumnName="ActivationDate" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CreditPackItems">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.CreditPackItem">
+        <MappingFragment StoreEntitySet="CreditPackItem">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CreditPackId" ColumnName="CreditPackId" />
+          <ScalarProperty Name="ProductOfferingId" ColumnName="ProductOfferingId" />
+          <ScalarProperty Name="Stock" ColumnName="Stock" />
+          <ScalarProperty Name="SpentStock" ColumnName="SpentStock" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.Product">
+        <MappingFragment StoreEntitySet="Product">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Duration" ColumnName="Duration" />
+          <ScalarProperty Name="Billiable" ColumnName="Billiable" />
+          <ScalarProperty Name="SAPCode" ColumnName="SAPCode" />
+          <ScalarProperty Name="Discriminator" ColumnName="Discriminator" />
+          <ScalarProperty Name="PriorityLevel" ColumnName="PriorityLevel" />
+          <ScalarProperty Name="ApplyDiscount" ColumnName="ApplyDiscount" />
+          <ScalarProperty Name="SearchResultSection" ColumnName="SearchResultSection" />
+          <ScalarProperty Name="MaxPictureQuantity" ColumnName="MaxPictureQuantity" />
+          <ScalarProperty Name="PublicationTypeId" ColumnName="PublicationTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductOfferings">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.ProductOffering">
+        <MappingFragment StoreEntitySet="ProductOffering">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+          <ScalarProperty Name="OfferedInFrontEnd" ColumnName="OfferedInFrontEnd" />
+          <ScalarProperty Name="OfferedInBackoffice" ColumnName="OfferedInBackoffice" />
+          <ScalarProperty Name="AgencyOfficial" ColumnName="AgencyOfficial" />
+          <ScalarProperty Name="AgencyMultiBrand" ColumnName="AgencyMultiBrand" />
+          <ScalarProperty Name="idProduct" ColumnName="idProduct" />
+          <ScalarProperty Name="idBusinessDomain" ColumnName="idBusinessDomain" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="PublishableItemTypeId" ColumnName="PublishableItemTypeId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductOfferingPrices">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.ProductOfferingPrice">
+        <MappingFragment StoreEntitySet="ProductOfferingPrice">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="F_ProductOffering_Id" ColumnName="F_ProductOffering_Id" />
+          <ScalarProperty Name="A_Price" ColumnName="A_Price" />
+          <ScalarProperty Name="F_CustomCurrency_Id" ColumnName="F_CustomCurrency_Id" />
+          <ScalarProperty Name="A_AvaiableSinceDate" ColumnName="A_AvaiableSinceDate" />
+          <ScalarProperty Name="A_AvailableToDate" ColumnName="A_AvailableToDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductPackItems">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.ProductPackItem">
+        <MappingFragment StoreEntitySet="ProductPackItem">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="idProduct" ColumnName="idProduct" />
+          <ScalarProperty Name="ProductPack_id" ColumnName="ProductPack_id" />
+          <ScalarProperty Name="ProductOfferingId" ColumnName="ProductOfferingId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuditPublicationPaperDates">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.AuditPublicationPaperDate">
+        <MappingFragment StoreEntitySet="AuditPublicationPaperDate">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="F_PublicationPaperDate_Id" ColumnName="F_PublicationPaperDate_Id" />
+          <ScalarProperty Name="A_State" ColumnName="A_State" />
+          <ScalarProperty Name="A_DateOfEntryIntoTheState" ColumnName="A_DateOfEntryIntoTheState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cars">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.Car">
+        <MappingFragment StoreEntitySet="Car">
+          <ScalarProperty Name="Vehicle_id" ColumnName="Vehicle_id" />
+          <ScalarProperty Name="idVersion" ColumnName="idVersion" />
+          <ScalarProperty Name="ShowCatalogInfo" ColumnName="ShowCatalogInfo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewCars">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.NewCar">
+        <MappingFragment StoreEntitySet="NewCar">
+          <ScalarProperty Name="Car_id" ColumnName="Car_id" />
+          <ScalarProperty Name="AdvancePayment" ColumnName="AdvancePayment" />
+          <ScalarProperty Name="SinceQuota" ColumnName="SinceQuota" />
+          <ScalarProperty Name="Patenting" ColumnName="Patenting" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Publications">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.Publication">
+        <MappingFragment StoreEntitySet="Publication">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="VisitsCounter" ColumnName="VisitsCounter" />
+          <ScalarProperty Name="AutoRePublication" ColumnName="AutoRePublication" />
+          <ScalarProperty Name="idUser" ColumnName="idUser" />
+          <ScalarProperty Name="idPublishableItem" ColumnName="idPublishableItem" />
+          <ScalarProperty Name="ActivatedByClienting" ColumnName="ActivatedByClienting" />
+          <ScalarProperty Name="LastModificationDate" ColumnName="LastModificationDate" />
+          <ScalarProperty Name="ShowInHome" ColumnName="ShowInHome" />
+          <ScalarProperty Name="F_PublicationPaper_Id" ColumnName="F_PublicationPaper_Id" />
+          <ScalarProperty Name="ShowCountInDetailView" ColumnName="ShowCountInDetailView" />
+          <ScalarProperty Name="ParentPublicationId" ColumnName="ParentPublicationId" />
+          <ScalarProperty Name="StateId" ColumnName="StateId" />
+          <ScalarProperty Name="GeolocationItemId" ColumnName="GeolocationItemId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PublicationPapers">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PublicationPaper">
+        <MappingFragment StoreEntitySet="PublicationPaper">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="A_Text" ColumnName="A_Text" />
+          <ScalarProperty Name="A_CreationDate" ColumnName="A_CreationDate" />
+          <ScalarProperty Name="A_LastModifiedDateText" ColumnName="A_LastModifiedDateText" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PublicationPaperDates">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PublicationPaperDate">
+        <MappingFragment StoreEntitySet="PublicationPaperDate">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="F_PublicationPaper_Id" ColumnName="F_PublicationPaper_Id" />
+          <ScalarProperty Name="A_State" ColumnName="A_State" />
+          <ScalarProperty Name="A_OriginalPublishingDate" ColumnName="A_OriginalPublishingDate" />
+          <ScalarProperty Name="F_PublicationPaperDateProcess_Id" ColumnName="F_PublicationPaperDateProcess_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PublicationPaperDateProcesses">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PublicationPaperDateProcess">
+        <MappingFragment StoreEntitySet="PublicationPaperDateProcess">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="A_ProcessDate" ColumnName="A_ProcessDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PublishableItems">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PublishableItem">
+        <MappingFragment StoreEntitySet="PublishableItem">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="PictureQuantityMax" ColumnName="PictureQuantityMax" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="LocalCurrencyPrice" ColumnName="LocalCurrencyPrice" />
+          <ScalarProperty Name="idPriceCurrency" ColumnName="idPriceCurrency" />
+          <ScalarProperty Name="idLocalCurrencyPriceCurrency" ColumnName="idLocalCurrencyPriceCurrency" />
+          <ScalarProperty Name="SourceName" ColumnName="SourceName" />
+          <ScalarProperty Name="CheckPrice" ColumnName="CheckPrice" />
+          <ScalarProperty Name="VideoUri" ColumnName="VideoUri" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PublishableItemImages">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PublishableItemImage">
+        <MappingFragment StoreEntitySet="PublishableItemImage">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PublishableItemId" ColumnName="PublishableItemId" />
+          <ScalarProperty Name="FileName" ColumnName="FileName" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Format" ColumnName="Format" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PublishableItemPaymentMethods">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PublishableItemPaymentMethod">
+        <MappingFragment StoreEntitySet="PublishableItemPaymentMethod">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PublishableItemTypes">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PublishableItemType">
+        <MappingFragment StoreEntitySet="PublishableItemType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SeoFriendlyName" ColumnName="SeoFriendlyName" />
+          <ScalarProperty Name="OrderShow" ColumnName="OrderShow" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SavingPlans">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.SavingPlan">
+        <MappingFragment StoreEntitySet="SavingPlan">
+          <ScalarProperty Name="Car_id" ColumnName="Car_id" />
+          <ScalarProperty Name="A_Financing" ColumnName="A_Financing" />
+          <ScalarProperty Name="A_PureFeeValue" ColumnName="A_PureFeeValue" />
+          <ScalarProperty Name="A_AverageFeeValue" ColumnName="A_AverageFeeValue" />
+          <ScalarProperty Name="A_NumberOfFees" ColumnName="A_NumberOfFees" />
+          <ScalarProperty Name="A_NumberOfAgreedDeliveryFee" ColumnName="A_NumberOfAgreedDeliveryFee" />
+          <ScalarProperty Name="F_SavingPlanTransferData_Id" ColumnName="F_SavingPlanTransferData_Id" />
+          <ScalarProperty Name="F_SavingPlanType_Id" ColumnName="F_SavingPlanType_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SavingPlanTransferDatas">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.SavingPlanTransferData">
+        <MappingFragment StoreEntitySet="SavingPlanTransferData">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="A_NumberOfPaidFees" ColumnName="A_NumberOfPaidFees" />
+          <ScalarProperty Name="A_TransferAmmount" ColumnName="A_TransferAmmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UsedCars">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.UsedCar">
+        <MappingFragment StoreEntitySet="UsedCar">
+          <ScalarProperty Name="Car_id" ColumnName="Car_id" />
+          <ScalarProperty Name="Mileage" ColumnName="Mileage" />
+          <ScalarProperty Name="Plate" ColumnName="Plate" />
+          <ScalarProperty Name="idColour" ColumnName="idColour" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Vehicles">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.Vehicle">
+        <MappingFragment StoreEntitySet="Vehicle">
+          <ScalarProperty Name="PublishableItem_id" ColumnName="PublishableItem_id" />
+          <ScalarProperty Name="SellerComments" ColumnName="SellerComments" />
+          <ScalarProperty Name="UploadedPhotosQuantity" ColumnName="UploadedPhotosQuantity" />
+          <ScalarProperty Name="idFuel" ColumnName="idFuel" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EMailAudits">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.EMailAudit">
+        <MappingFragment StoreEntitySet="EMailAudit">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="OldEMail" ColumnName="OldEMail" />
+          <ScalarProperty Name="NewEMail" ColumnName="NewEMail" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="SendDate" ColumnName="SendDate" />
+          <ScalarProperty Name="ConfirmationDate" ColumnName="ConfirmationDate" />
+          <ScalarProperty Name="Action" ColumnName="Action" />
+          <ScalarProperty Name="idUser" ColumnName="idUser" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Roles">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserClaims">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.UserClaim">
+        <MappingFragment StoreEntitySet="UserClaim">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
+          <ScalarProperty Name="ClaimValue" ColumnName="ClaimValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserLogins">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.UserLogin">
+        <MappingFragment StoreEntitySet="UserLogin">
+          <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
+          <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PublicationSimilarConfigurations">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PublicationSimilarConfiguration">
+        <MappingFragment StoreEntitySet="PublicationSimilarConfiguration">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="A_Enabled" ColumnName="A_Enabled" />
+          <ScalarProperty Name="F_Base_PublishableItemType_Id" ColumnName="F_Base_PublishableItemType_Id" />
+          <ScalarProperty Name="F_Functionality_Id" ColumnName="F_Functionality_Id" />
+          <ScalarProperty Name="F_Filter_PublishableItemType_Id" ColumnName="F_Filter_PublishableItemType_Id" />
+          <ScalarProperty Name="F_GeoLocationItemType_Id" ColumnName="F_GeoLocationItemType_Id" />
+          <ScalarProperty Name="F_Brand_OperationType_Id" ColumnName="F_Brand_OperationType_Id" />
+          <ScalarProperty Name="F_Model_OperationType_Id" ColumnName="F_Model_OperationType_Id" />
+          <ScalarProperty Name="F_Version_OperationType_Id" ColumnName="F_Version_OperationType_Id" />
+          <ScalarProperty Name="F_Segment_OperationType_Id" ColumnName="F_Segment_OperationType_Id" />
+          <ScalarProperty Name="F_Traction_OperationType_Id" ColumnName="F_Traction_OperationType_Id" />
+          <ScalarProperty Name="F_SavingPlanType_OperationType_Id" ColumnName="F_SavingPlanType_OperationType_Id" />
+          <ScalarProperty Name="A_YearLess" ColumnName="A_YearLess" />
+          <ScalarProperty Name="A_YearMore" ColumnName="A_YearMore" />
+          <ScalarProperty Name="A_MileageLess" ColumnName="A_MileageLess" />
+          <ScalarProperty Name="A_MileageMore" ColumnName="A_MileageMore" />
+          <ScalarProperty Name="A_PercentagePriceLess" ColumnName="A_PercentagePriceLess" />
+          <ScalarProperty Name="A_PercentagePriceMore" ColumnName="A_PercentagePriceMore" />
+          <ScalarProperty Name="A_AmountPriceLess" ColumnName="A_AmountPriceLess" />
+          <ScalarProperty Name="A_AmountPriceMore" ColumnName="A_AmountPriceMore" />
+          <ScalarProperty Name="A_BaseUserTypeId" ColumnName="A_BaseUserTypeId" />
+          <ScalarProperty Name="A_FilterUserTypeId" ColumnName="A_FilterUserTypeId" />
+          <ScalarProperty Name="A_VerifyCheckContact" ColumnName="A_VerifyCheckContact" />
+          <ScalarProperty Name="PurePriceLess" ColumnName="PurePriceLess" />
+          <ScalarProperty Name="PurePriceMore" ColumnName="PurePriceMore" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PublicationSimilarConfigurationFunctionalities">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PublicationSimilarConfigurationFunctionality">
+        <MappingFragment StoreEntitySet="PublicationSimilarConfigurationFunctionality">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="A_Name" ColumnName="A_Name" />
+          <ScalarProperty Name="A_MatchKey" ColumnName="A_MatchKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PublicationSimilarConfigurationOperationTypes">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PublicationSimilarConfigurationOperationType">
+        <MappingFragment StoreEntitySet="PublicationSimilarConfigurationOperationType">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="A_Name" ColumnName="A_Name" />
+          <ScalarProperty Name="A_MatchKey" ColumnName="A_MatchKey" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClientUsers">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.ClientUser">
+        <MappingFragment StoreEntitySet="ClientUser">
+          <ScalarProperty Name="User_id" ColumnName="User_id" />
+          <ScalarProperty Name="Manager" ColumnName="Manager" />
+          <ScalarProperty Name="Site" ColumnName="Site" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EndUsers">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.EndUser">
+        <MappingFragment StoreEntitySet="EndUser">
+          <ScalarProperty Name="User_id" ColumnName="User_id" />
+          <ScalarProperty Name="idGeolocationItem" ColumnName="idGeolocationItem" />
+          <ScalarProperty Name="A_AlertUser" ColumnName="A_AlertUser" />
+          <ScalarProperty Name="A_DateAlertToPart" ColumnName="A_DateAlertToPart" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ImportUsers">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.ImportUser">
+        <MappingFragment StoreEntitySet="ImportUser">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="System" ColumnName="System" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PhoneNumbers">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.PhoneNumber">
+        <MappingFragment StoreEntitySet="PhoneNumber">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AreaCode" ColumnName="AreaCode" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="UserType" ColumnName="UserType" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="idBusinessDomain" ColumnName="idBusinessDomain" />
+          <ScalarProperty Name="idPrimaryPhoneNumber" ColumnName="idPrimaryPhoneNumber" />
+          <ScalarProperty Name="idSecondaryPhoneNumber" ColumnName="idSecondaryPhoneNumber" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reports">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.Report">
+        <MappingFragment StoreEntitySet="Report">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Sp_Name" ColumnName="Sp_Name" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="Sp_Type" ColumnName="Sp_Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AuditCatalogs">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.AuditCatalog">
+        <MappingFragment StoreEntitySet="AuditCatalog">
+          <ScalarProperty Name="P_id" ColumnName="P_id" />
+          <ScalarProperty Name="F_T_Sec_user_id" ColumnName="F_T_Sec_user_id" />
+          <ScalarProperty Name="F_T_BasicOperations_P_id" ColumnName="F_T_BasicOperations_P_id" />
+          <ScalarProperty Name="F_VehicleModel_id" ColumnName="F_VehicleModel_id" />
+          <ScalarProperty Name="A_ContentData" ColumnName="A_ContentData" />
+          <ScalarProperty Name="A_ExecutionDate" ColumnName="A_ExecutionDate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VehicleBrandSellerClients">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.VehicleBrandSellerClient">
+        <MappingFragment StoreEntitySet="VehicleBrandSellerClient">
+          <ScalarProperty Name="P_Id" ColumnName="P_Id" />
+          <ScalarProperty Name="F_VehicleBrand_Id" ColumnName="F_VehicleBrand_Id" />
+          <ScalarProperty Name="F_User_Id" ColumnName="F_User_Id" />
+          <ScalarProperty Name="A_ActiveState" ColumnName="A_ActiveState" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DbVersions">
+      <EntityTypeMapping TypeName="DeAutos.Automation.Model.DbVersion">
+        <MappingFragment StoreEntitySet="DbVersion">
+          <ScalarProperty Name="AppName" ColumnName="AppName" />
+          <ScalarProperty Name="Version" ColumnName="Version" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="SecurityUserRole" TypeName="DeAutos.Automation.Model.SecurityUserRole" StoreEntitySet="SecurityUserRole">
+      <EndProperty Name="SecurityRole">
+        <ScalarProperty Name="id" ColumnName="sec_role_id" />
+      </EndProperty>
+      <EndProperty Name="SecurityUser">
+        <ScalarProperty Name="id" ColumnName="sec_user_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="PublicationSite" TypeName="DeAutos.Automation.Model.PublicationSite" StoreEntitySet="PublicationSite">
+      <EndProperty Name="Publication">
+        <ScalarProperty Name="Id" ColumnName="PublicationId" />
+      </EndProperty>
+      <EndProperty Name="Site">
+        <ScalarProperty Name="Id" ColumnName="SiteId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="UserRole" TypeName="DeAutos.Automation.Model.UserRole" StoreEntitySet="UserRole">
+      <EndProperty Name="Role">
+        <ScalarProperty Name="Id" ColumnName="RoleId" />
+      </EndProperty>
+      <EndProperty Name="User">
+        <ScalarProperty Name="Id" ColumnName="UserId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="SuscriptionPurchaseOrder" TypeName="DeAutos.Automation.Model.SuscriptionPurchaseOrder" StoreEntitySet="SuscriptionPurchaseOrder">
+      <EndProperty Name="Suscription">
+        <ScalarProperty Name="Id" ColumnName="Suscription_id" />
+      </EndProperty>
+      <EndProperty Name="PurchaseOrder">
+        <ScalarProperty Name="Id" ColumnName="PurchaseOrder_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ClientUserCampaign" TypeName="DeAutos.Automation.Model.ClientUserCampaign" StoreEntitySet="ClientUserCampaign">
+      <EndProperty Name="ClientUser">
+        <ScalarProperty Name="User_id" ColumnName="AgencyUser_Id" />
+      </EndProperty>
+      <EndProperty Name="Campaign">
+        <ScalarProperty Name="P_Id" ColumnName="Campaign_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ClientUserVehicleBrand" TypeName="DeAutos.Automation.Model.ClientUserVehicleBrand" StoreEntitySet="ClientUserVehicleBrand">
+      <EndProperty Name="ClientUser">
+        <ScalarProperty Name="User_id" ColumnName="AgencyUser_id" />
+      </EndProperty>
+      <EndProperty Name="VehicleBrand">
+        <ScalarProperty Name="Id" ColumnName="VehicleBrand_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="BusinessDomainCurrency" TypeName="DeAutos.Automation.Model.BusinessDomainCurrency" StoreEntitySet="BusinessDomainCurrency">
+      <EndProperty Name="BusinessDomain">
+        <ScalarProperty Name="Id" ColumnName="BusinessDomain_id" />
+      </EndProperty>
+      <EndProperty Name="Currency">
+        <ScalarProperty Name="Id" ColumnName="CustomCurrency_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="BusinessDomainFuel" TypeName="DeAutos.Automation.Model.BusinessDomainFuel" StoreEntitySet="BusinessDomainFuel">
+      <EndProperty Name="BusinessDomain">
+        <ScalarProperty Name="Id" ColumnName="BusinessDomain_id" />
+      </EndProperty>
+      <EndProperty Name="Fuel">
+        <ScalarProperty Name="Id" ColumnName="Fuel_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="BusinessDomainImageFormat" TypeName="DeAutos.Automation.Model.BusinessDomainImageFormat" StoreEntitySet="BusinessDomainImageFormat">
+      <EndProperty Name="BusinessDomain">
+        <ScalarProperty Name="Id" ColumnName="BusinessDomain_id" />
+      </EndProperty>
+      <EndProperty Name="ImageFormat">
+        <ScalarProperty Name="Id" ColumnName="ImageFormat_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="BusinessDomainPublishableItemType" TypeName="DeAutos.Automation.Model.BusinessDomainPublishableItemType" StoreEntitySet="BusinessDomainPublishableItemType">
+      <EndProperty Name="PublishableItemType">
+        <ScalarProperty Name="Id" ColumnName="PublishableItemType_id" />
+      </EndProperty>
+      <EndProperty Name="BusinessDomain">
+        <ScalarProperty Name="Id" ColumnName="BusinessDomain_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="GeoLocationRingGeoLocationItem" TypeName="DeAutos.Automation.Model.GeoLocationRingGeoLocationItem" StoreEntitySet="GeoLocationRingGeoLocationItem">
+      <EndProperty Name="GeoLocationItem">
+        <ScalarProperty Name="Id" ColumnName="F_GeolocationItem_Id" />
+      </EndProperty>
+      <EndProperty Name="GeoLocationRing">
+        <ScalarProperty Name="P_Id" ColumnName="F_GeolocationRing_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="PublishableItemTypeVehicleBrand" TypeName="DeAutos.Automation.Model.PublishableItemTypeVehicleBrand" StoreEntitySet="PublishableItemTypeVehicleBrand">
+      <EndProperty Name="PublishableItemType">
+        <ScalarProperty Name="Id" ColumnName="PublishableItemType_id" />
+      </EndProperty>
+      <EndProperty Name="VehicleBrand">
+        <ScalarProperty Name="Id" ColumnName="VehicleBrand_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="PublishableItemTypeVehicleModel" TypeName="DeAutos.Automation.Model.PublishableItemTypeVehicleModel" StoreEntitySet="PublishableItemTypeVehicleModel">
+      <EndProperty Name="PublishableItemType">
+        <ScalarProperty Name="Id" ColumnName="PublishableItemType_id" />
+      </EndProperty>
+      <EndProperty Name="VehicleModel">
+        <ScalarProperty Name="Id" ColumnName="VehicleModel_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="PublishableItemTypeVehicleSpecsCategory" TypeName="DeAutos.Automation.Model.PublishableItemTypeVehicleSpecsCategory" StoreEntitySet="PublishableItemTypeVehicleSpecsCategory">
+      <EndProperty Name="PublishableItemType">
+        <ScalarProperty Name="Id" ColumnName="PublishableItemType_id" />
+      </EndProperty>
+      <EndProperty Name="VehicleSpecsCategory">
+        <ScalarProperty Name="Id" ColumnName="VehicleSpecsCategory_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="PublishableItemTypeVehicleVersion" TypeName="DeAutos.Automation.Model.PublishableItemTypeVehicleVersion" StoreEntitySet="PublishableItemTypeVehicleVersion">
+      <EndProperty Name="PublishableItemType">
+        <ScalarProperty Name="Id" ColumnName="PublishableItemType_id" />
+      </EndProperty>
+      <EndProperty Name="VehicleVersion">
+        <ScalarProperty Name="Id" ColumnName="VehicleVersion_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="VehicleAttributeDefinition" TypeName="DeAutos.Automation.Model.VehicleAttributeDefinition" StoreEntitySet="VehicleAttributeDefinition">
+      <EndProperty Name="AttributeDefinition">
+        <ScalarProperty Name="Id" ColumnName="AttributeDefinition_id" />
+      </EndProperty>
+      <EndProperty Name="Vehicle">
+        <ScalarProperty Name="PublishableItem_id" ColumnName="Vehicle_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="VehicleSpecialAttributeDefinition" TypeName="DeAutos.Automation.Model.VehicleSpecialAttributeDefinition" StoreEntitySet="VehicleSpecialAttributeDefinition">
+      <EndProperty Name="SpecialAttributeDefinition">
+        <ScalarProperty Name="Id" ColumnName="SpecialAttributeDefinition_id" />
+      </EndProperty>
+      <EndProperty Name="Vehicle">
+        <ScalarProperty Name="PublishableItem_id" ColumnName="Vehicle_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="DiscountGeoLocationItem" TypeName="DeAutos.Automation.Model.DiscountGeoLocationItem" StoreEntitySet="DiscountGeoLocationItem">
+      <EndProperty Name="Discount">
+        <ScalarProperty Name="Id" ColumnName="Discount_id" />
+      </EndProperty>
+      <EndProperty Name="GeoLocationItem">
+        <ScalarProperty Name="Id" ColumnName="GeoLocationItem_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ProductDiscount" TypeName="DeAutos.Automation.Model.ProductDiscount" StoreEntitySet="ProductDiscount">
+      <EndProperty Name="Discount">
+        <ScalarProperty Name="Id" ColumnName="Discount_id" />
+      </EndProperty>
+      <EndProperty Name="Product">
+        <ScalarProperty Name="Id" ColumnName="Product_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ZonalSupplementAreaGeoLocationItem" TypeName="DeAutos.Automation.Model.ZonalSupplementAreaGeoLocationItem" StoreEntitySet="ZonalSupplementAreaGeoLocationItem">
+      <EndProperty Name="GeoLocationItem">
+        <ScalarProperty Name="Id" ColumnName="GeoLocationItemId" />
+      </EndProperty>
+      <EndProperty Name="ZonalSupplementArea">
+        <ScalarProperty Name="id" ColumnName="ZonalSupplementAreaId" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ProductOfferingExcludedProduct" TypeName="DeAutos.Automation.Model.ProductOfferingExcludedProduct" StoreEntitySet="ProductOfferingExcludedProduct">
+      <EndProperty Name="Product">
+        <ScalarProperty Name="Id" ColumnName="Product_id" />
+      </EndProperty>
+      <EndProperty Name="ProductOffering">
+        <ScalarProperty Name="Id" ColumnName="ProductOffering_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ProductOfferingGeoLocationItem" TypeName="DeAutos.Automation.Model.ProductOfferingGeoLocationItem" StoreEntitySet="ProductOfferingGeoLocationItem">
+      <EndProperty Name="GeoLocationItem">
+        <ScalarProperty Name="Id" ColumnName="GeoLocationItem_id" />
+      </EndProperty>
+      <EndProperty Name="ProductOffering">
+        <ScalarProperty Name="Id" ColumnName="ProductOffering_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="ProductOfferingRequiredProduct" TypeName="DeAutos.Automation.Model.ProductOfferingRequiredProduct" StoreEntitySet="ProductOfferingRequiredProduct">
+      <EndProperty Name="Product">
+        <ScalarProperty Name="Id" ColumnName="Product_id" />
+      </EndProperty>
+      <EndProperty Name="ProductOffering">
+        <ScalarProperty Name="Id" ColumnName="ProductOffering_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="VehiclePublishableItemPaymentMethod" TypeName="DeAutos.Automation.Model.VehiclePublishableItemPaymentMethod" StoreEntitySet="VehiclePublishableItemPaymentMethod">
+      <EndProperty Name="PublishableItemPaymentMethod">
+        <ScalarProperty Name="Id" ColumnName="PublishableItemPaymentMethod_id" />
+      </EndProperty>
+      <EndProperty Name="Vehicle">
+        <ScalarProperty Name="PublishableItem_id" ColumnName="Vehicle_id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="PublicationSimilarConfigurationAvailableFromGeoLocationRing" TypeName="DeAutos.Automation.Model.PublicationSimilarConfigurationAvailableFromGeoLocationRing" StoreEntitySet="PublicationSimilarConfigurationAvailableFromGeoLocationRing">
+      <EndProperty Name="GeoLocationRing">
+        <ScalarProperty Name="P_Id" ColumnName="F_GeoLocationRing_Id" />
+      </EndProperty>
+      <EndProperty Name="PublicationSimilarConfiguration">
+        <ScalarProperty Name="P_Id" ColumnName="F_PublicationSimilarConfiguration_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="PublicationSimilarConfigurationFindGeoLocationRing" TypeName="DeAutos.Automation.Model.PublicationSimilarConfigurationFindGeoLocationRing" StoreEntitySet="PublicationSimilarConfigurationFindGeoLocationRing">
+      <EndProperty Name="GeoLocationRing">
+        <ScalarProperty Name="P_Id" ColumnName="F_GeoLocationRing_Id" />
+      </EndProperty>
+      <EndProperty Name="PublicationSimilarConfiguration">
+        <ScalarProperty Name="P_Id" ColumnName="F_PublicationSimilarConfiguration_Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

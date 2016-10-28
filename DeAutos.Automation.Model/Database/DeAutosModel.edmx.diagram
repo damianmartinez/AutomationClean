@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ac51540c3e5a4556b7f33c52bac7d929" Name="Diagram1">
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.BannerCampaign" Width="1.5" PointX="45" PointY="112.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.BannerInfo" Width="1.5" PointX="5.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.Prelisting" Width="1.5" PointX="35.5" PointY="116.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PrelistingToVehicleBrand" Width="1.5" PointX="37.75" PointY="110.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PrelistingToVehicleModel" Width="1.5" PointX="45" PointY="110.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.Tag" Width="1.5" PointX="8.25" PointY="99" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.Alert" Width="1.5" PointX="3" PointY="109.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.AlertFeature" Width="1.5" PointX="5.25" PointY="102.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.AlertInterval" Width="1.5" PointX="0.75" PointY="105.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.AlertPublishableItem" Width="1.5" PointX="7.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.AlertUser" Width="1.5" PointX="0.75" PointY="114.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.BackOfficeLog" Width="1.5" PointX="9.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.SecurityRole" Width="1.5" PointX="46.5" PointY="124.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.SecurityUser" Width="1.5" PointX="48.75" PointY="123.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.Reporting" Width="1.5" PointX="10.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.ReportingScheduled" Width="1.5" PointX="2.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PaymentMethod" Width="1.5" PointX="40.75" PointY="89.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PaymentMethodAvailability" Width="1.5" PointX="8.25" PointY="102" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PaymentTicket" Width="1.5" PointX="40" PointY="108.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PaymentTicketGatewayRequest" Width="1.5" PointX="43" PointY="104" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PaymentTicketGatewayResponse" Width="1.5" PointX="11.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PricingZone" Width="1.5" PointX="15" PointY="83.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PurchaseOrder" Width="1.5" PointX="37.75" PointY="103.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PurchaseOrderItem" Width="1.5" PointX="15.5" PointY="110.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PurchaseOrderItemDiscount" Width="1.5" PointX="17.75" PointY="110.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.SapBillingInfo" Width="1.5" PointX="11.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.SapBlacklist" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.SapZone" Width="1.5" PointX="17.25" PointY="83.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.Suscription" Width="1.5" PointX="34.5" PointY="97.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.SuscriptionItem" Width="1.5" PointX="10.5" PointY="109.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.AgenciesContacted" Width="1.5" PointX="15.5" PointY="121" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.AutoPublication" Width="1.5" PointX="35.5" PointY="120.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.AutoPublicationVehicleModelYear" Width="1.5" PointX="48" PointY="113" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.CatalogLevel" Width="1.5" PointX="2.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.CatalogMetadata" Width="1.5" PointX="5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.CatalogSponsor" Width="1.5" PointX="45" PointY="116.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.CatalogSponsorCompare" Width="1.5" PointX="50.25" PointY="109.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.ContactData" Width="1.5" PointX="24.75" PointY="104.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.Feature" Width="1.5" PointX="50.25" PointY="102.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.FeatureGroup" Width="1.5" PointX="48" PointY="102.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.FeatureType" Width="1.5" PointX="50.25" PointY="127.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.GeoLocationItemAutoPublication" Width="1.5" PointX="21.75" PointY="109.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.ListedVehicle" Width="1.5" PointX="50.25" PointY="116.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.ListedVehicleFeature" Width="1.5" PointX="52.5" PointY="116.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.ListedVehicleFeatureValue" Width="1.5" PointX="54.75" PointY="117" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.ListingSponsor" Width="1.5" PointX="33" PointY="104.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.ListingSponsorGeoLocationItem" Width="1.5" PointX="24.75" PointY="109.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.ListingSponsorVehicleBrand" Width="1.5" PointX="42.75" PointY="108.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.ListingSponsorVehicleModelYear" Width="1.5" PointX="48" PointY="109.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.Location" Width="1.5" PointX="27.75" PointY="104.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.LocationType" Width="1.5" PointX="25.5" PointY="116.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.MetadataType" Width="1.5" PointX="2.75" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PeopleContacted" Width="1.5" PointX="18.5" PointY="114.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PeopleToBeContacted" Width="1.5" PointX="13.25" PointY="117.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.VehicleBrandAutoPublication" Width="1.5" PointX="37.75" PointY="113.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.VehicleModelSellerClient" Width="1.5" PointX="37.5" PointY="99.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.VehicleType" Width="1.5" PointX="48" PointY="128" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.Campaign" Width="1.5" PointX="34.5" PointY="113.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.Client" Width="1.5" PointX="27.75" PointY="98.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.CustomerGroup" Width="1.5" PointX="17.25" PointY="87" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.Site" Width="1.5" PointX="30" PointY="104.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.TaxCondition" Width="1.5" PointX="25.5" PointY="96" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.UserCustomerGroup" Width="1.5" PointX="19.5" PointY="99.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.AuditRememberDay" Width="1.5" PointX="42.75" PointY="100.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PhoneContact" Width="1.5" PointX="40.5" PointY="78.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.Remember" Width="1.5" PointX="38.25" PointY="88" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.RememberDay" Width="1.5" PointX="40.5" PointY="100.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.RememberDayItem" Width="1.5" PointX="45.75" PointY="103" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.ContactButton" Width="1.5" PointX="3.75" PointY="106.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.ContactButtonConfiguration" Width="1.5" PointX="6" PointY="110" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.Conversation" Width="1.5" PointX="35.25" PointY="103.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.Message" Width="1.5" PointX="40.5" PointY="95" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.AttributeDefinition" Width="1.5" PointX="5.25" PointY="134.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.BrandSavingPlan" Width="1.5" PointX="37.75" PointY="118.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.BusinessDomain" Width="1.5" PointX="6" PointY="105.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.Colour" Width="1.5" PointX="50.25" PointY="130.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.Currency" Width="1.5" PointX="8.25" PointY="113.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.Fuel" Width="1.5" PointX="8.25" PointY="117.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.GeoLocationItem" Width="1.5" PointX="19.5" PointY="103" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.GeoLocationItemType" Width="1.5" PointX="17.25" PointY="124.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.GeoLocationRing" Width="1.5" PointX="21.75" PointY="122.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.ImageFormat" Width="1.5" PointX="8.25" PointY="120.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.SavingPlanType" Width="1.5" PointX="53.25" PointY="113.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.SpecialAttributeDefinition" Width="1.5" PointX="10.5" PointY="122.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.VehicleBrand" Width="1.5" PointX="35.5" PointY="109.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.VehicleModel" Width="1.5" PointX="42.75" PointY="111.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.VehicleSegment" Width="1.5" PointX="45.75" PointY="120.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.VehicleSpecsCategory" Width="1.5" PointX="3" PointY="134.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.VehicleVersion" Width="1.5" PointX="48" PointY="116.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.dtproperty" Width="1.5" PointX="12.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.proofa2" Width="1.5" PointX="7.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.sysdiagram" Width="1.5" PointX="4.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.BasicOperation" Width="1.5" PointX="48.75" PointY="106.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.ClientState" Width="1.5" PointX="25.5" PointY="92.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.CreditPackState" Width="1.5" PointX="14.25" PointY="93" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.MessageKeyBroker" Width="1.5" PointX="12" PointY="95.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.MessageSubType" Width="1.5" PointX="38.25" PointY="93.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.MessageType" Width="1.5" PointX="38.25" PointY="96.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PublicationState" Width="1.5" PointX="13.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PublicationType" Width="1.5" PointX="13.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.SiteType" Width="1.5" PointX="27.75" PointY="95.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.SourceConversation" Width="1.5" PointX="33" PointY="95" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.SourceSection" Width="1.5" PointX="38.25" PointY="90.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.AppliedDiscountCoupon" Width="1.5" PointX="24.75" PointY="98.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.AuditClarin365TrackOfTransaction" Width="1.5" PointX="32.25" PointY="114" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.Clarin365TrackOfTransaction" Width="1.5" PointX="30" PointY="113.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.Discount" Width="1.5" PointX="11.25" PointY="103.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.DiscountCoupon" Width="1.5" PointX="22.5" PointY="100.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.ZonalSupplementArea" Width="1.5" PointX="21.75" PointY="125.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.HubColourConversion" Width="1.5" PointX="13.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.HubCurrencyConversion" Width="1.5" PointX="14.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.HubFuelConversion" Width="1.5" PointX="14.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.HubGeoLocationItemConversion" Width="1.5" PointX="15.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.HubProcessPublication" Width="1.5" PointX="6.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.HubProductConversion" Width="1.5" PointX="15.75" PointY="128.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.HubPublicationErrorDetail" Width="1.5" PointX="10" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.HubRubro" Width="1.5" PointX="43.5" PointY="121" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.HubVehicleModelConversion" Width="1.5" PointX="8.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.HubVehicleSpecConversion" Width="1.5" PointX="15.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.ImporterProcessLog" Width="1.5" PointX="7.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PaperBrandModelConversion" Width="1.5" PointX="10.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PublicationExternalAssociation" Width="1.5" PointX="33" PointY="110.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PublicationProvider" Width="1.5" PointX="30.75" PointY="123.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.IndexAttributeEntity" Width="1.5" PointX="3" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.IndexEntity" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.IndexFeatureEntity" Width="1.5" PointX="3" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.LocalizedMessage" Width="1.5" PointX="13.25" PointY="110" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.LocalizedMessageForm" Width="1.5" PointX="11" PointY="118.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.ContactServiceTemplate" Width="1.5" PointX="42.75" PointY="80" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.MailDepositBlacklist" Width="1.5" PointX="15.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.MessageActionAfterSent" Width="1.5" PointX="15.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.MessageBroker" Width="1.5" PointX="14.25" PointY="105.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.MessageQueue" Width="1.5" PointX="42.75" PointY="95.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.MessageQueueParam" Width="1.5" PointX="45" PointY="96.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.MessageQueueResponseDetail" Width="1.5" PointX="45" PointY="93" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.MessageQueueStatu" Width="1.5" PointX="40.5" PointY="86.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.MessageSendType" Width="1.5" PointX="38.25" PointY="82.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.MessageTemplate" Width="1.5" PointX="40.5" PointY="81.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PlanisysTemplate" Width="1.5" PointX="42.75" PointY="82.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.SmtpTemplate" Width="1.5" PointX="42.75" PointY="84.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.DataCarConversionReport" Width="1.5" PointX="16.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.DaxInfo" Width="1.5" PointX="16.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PublicationVisit" Width="1.5" PointX="30" PointY="120.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.MobileAppInfo" Width="1.5" PointX="12.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.ProcessScheduler" Width="1.5" PointX="8" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.ProcessTask" Width="1.5" PointX="5.75" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.CreditPack" Width="1.5" PointX="16.5" PointY="101.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.CreditPackItem" Width="1.5" PointX="21.75" PointY="105.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.Product" Width="1.5" PointX="13.5" PointY="127.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.ProductOffering" Width="1.5" PointX="8.25" PointY="106.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.ProductOfferingPrice" Width="1.5" PointX="15.5" PointY="114.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.ProductPackItem" Width="1.5" PointX="16.5" PointY="106.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.AuditPublicationPaperDate" Width="1.5" PointX="30" PointY="126.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.Car" Width="1.5" PointX="50.25" PointY="120" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.NewCar" Width="1.5" PointX="52.5" PointY="120.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.Publication" Width="1.5" PointX="27.75" PointY="109" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PublicationPaper" Width="1.5" PointX="25.5" PointY="112.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PublicationPaperDate" Width="1.5" PointX="27.75" PointY="117.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PublicationPaperDateProcess" Width="1.5" PointX="25.5" PointY="118.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PublishableItem" Width="1.5" PointX="10.5" PointY="113.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PublishableItemImage" Width="1.5" PointX="12.75" PointY="113.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PublishableItemPaymentMethod" Width="1.5" PointX="10.5" PointY="125.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PublishableItemType" Width="1.5" PointX="0.75" PointY="109.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.SavingPlan" Width="1.5" PointX="55.5" PointY="119.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.SavingPlanTransferData" Width="1.5" PointX="53.25" PointY="126.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.UsedCar" Width="1.5" PointX="52.5" PointY="123.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.Vehicle" Width="1.5" PointX="12.75" PointY="123.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.EMailAudit" Width="1.5" PointX="16.5" PointY="97.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.Role" Width="1.5" PointX="12" PointY="97.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.UserClaim" Width="1.5" PointX="16.5" PointY="94.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.UserLogin" Width="1.5" PointX="16.5" PointY="90.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PublicationSimilarConfiguration" Width="1.5" PointX="6" PointY="113.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PublicationSimilarConfigurationFunctionality" Width="1.5" PointX="3.75" PointY="114.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PublicationSimilarConfigurationOperationType" Width="1.5" PointX="3.75" PointY="117" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.ClientUser" Width="1.5" PointX="32.25" PointY="99.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.EndUser" Width="1.5" PointX="21.75" PointY="96.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.ImportUser" Width="1.5" PointX="16.5" PointY="118.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.PhoneNumber" Width="1.5" PointX="12" PointY="100.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.User" Width="1.5" PointX="14.25" PointY="95.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.Report" Width="1.5" PointX="17.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.AuditCatalog" Width="1.5" PointX="51" PointY="112.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.VehicleBrandSellerClient" Width="1.5" PointX="40.75" PointY="104.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="DeAutos.Automation.Model.DbVersion" Width="1.5" PointX="17.75" PointY="9.75" IsExpanded="true" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK__T_BannerC__F_Veh__70F4691F" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_BannerCampaign_T_PeopleToBeContacted" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK__Prelistin__Preli__6CB9C3E7" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK__Prelistin__Preli__7B07E33E" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK__Prelistin__Vehic__7BFC0777" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK__Prelistin__Vehic__6DADE820" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK297C96CAC7349A6C" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FKAAA0AAB350A434C" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK__T_Alerts___F_IDA__006BB6D9" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK__T_Alerts__F_IDIn__7D8F4A2E" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK__T_Alerts__F_Publ__7C9B25F5" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK__T_Alerts__F_User__6C2FB402" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_Alert_T_PeopleToBeContacted" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK__T_AuditCa__F_T_S__75EE2866" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_PaymentTicketGatewayRequest_PaymentMethod" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK332B1796C7349A6C" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK1554BB94293FAE1D" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK1554BB9434BDB297" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK1554BB94C4E4FF69" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_PaymentTicketGatewayRequest_PubUser" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_PaymentTicketGatewayRequest_PurchaseOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_SAPZone_PricingZone" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_Location_PricingZone" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_RememberDayItem_PricingZone" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_AppliedDiscountCoupon_PurchaseOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_CreditPack_PurchaseOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_PurchaseOrder_CustomCurrency" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_PurchaseOrder_PublicationOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_PurchaseOrder_PubUser" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK2F61A4F834BDB297" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_PurchaseOrderItem_ProductOffering" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_PurchaseOrderItem_Discount_PurchaseOrderItem" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK2F61A4F85BF08A29" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_PurchaseOrderItem_Discount_Discount" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_GeoLocationItem_SAPZone" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FKE4F5C93CD6667DBC" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_SuscriptionItem_ProductOffering" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_AgenciesContacted_T_PeopleToBeContacted" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK__GeoLocati__AutoP__076DBA23" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK__VehicleBr__AutoP__0B3E4B07" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_AutoPublicationToVehicleModelYear_AutoPublication" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_AutoPublicationToVehicleModelYear_VehicleModel" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_CatalogLevels_CatalogMetadata" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_MetadataTypes_CatalogMetadata" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK__CatalogSp__Spons__18CD504F" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK__CatalogSp__Versi__19C17488" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_dbo_CatalogSponsor_1" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK__CatalogSp__Model__17D92C16" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_ContactData_Location" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_ContactData_PeopleToBeContacted" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_GeoLocationItem_ContactData" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_Features_ListedVehiclesFeatures" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_FeaturesGroups_Features" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_FeaturesTypes_ListedVehiclesFeatures" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK__GeoLocati__GeoLo__067995EA" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_ListedVehicles_ListedVehiclesFeatures" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_VehicleTypes_ListedVehicles" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_VehicleVersion_ListedVehicles" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_ListedVehiclesFeatures_ListedVehiclesFeaturesValues" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK__ListingSp__Listi__039D293F" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK__ListingSp__Listi__4B58D01C" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK__ListingSp__Listi__7FCC985B" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_ListingSponsor_PublicationOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_ListingSponsor_PubUser" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK__ListingSp__GeoLo__02A90506" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK__ListingSp__Vehic__7ED87422" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK__ListingSp__Vehic__4C4CF455" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_Location_GeoLocationItem" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_Location_T_LocationType" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_PeopleContacted_T_AgencyUser" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_PeopleContacted_T_PeopleToBeContacted" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_VehicleModel_T_PeopleToBeContacted" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK__VehicleBr__Vehic__0A4A26CE" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_AgencyUser_ListedVehiclesSellerAgencies" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_VehicleModel_VehicleModelSellerAgencies" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_Client_ClientState" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_Client_GeoLocationItem" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_Client_PhoneNumber" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_Client_TaxCondition" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_Client_TaxGeoLocationItem" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_Site_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_CustomerGroup_T_GroupMembers" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_AgencyUser_Site" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_Conversation_Site" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_Site_GeoLocationItem" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_Site_SiteType" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_PubUser_T_GroupMembers" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_Audit_RememberDay_T_RememberDay" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_PhoneContact_SourceSection" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_RememberDay_T_Remember" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_RememberDay_Conversation" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_RememberDayItem_T_RememberDay" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_RememberDayItem_Conversation" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_RememberDayItem_GeoLocationItem_Localidad" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_RememberDayItem_GeoLocationItem_Partido" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_RememberDayItem_GeoLocationItem_Provincia" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_ContactButtonConfiguration_ContactButton" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_ContactButtonConfiguration_PublishableItemType" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_Conversation_Conversation" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_Conversation_Publication" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_Conversation_SourceConversation" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_Conversation_User" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_Message_Conversation" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_Message_MessageSubType" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_Message_MessageType" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_Message_SourceSection" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_Message_User" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_MessageQueue_Message" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK8773E135A4CAF3A9" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_BrandSavingPlan_VehicleBrand" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_LocalizedMessage_BusinessDomain" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_MessageBroker_BusinessDomain" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK4ACB3C8A50A434C" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FKE0364196C7349A6C" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FKF2553576F3AF9F5B" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FKFB8C822FC7349A6C" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FKF5A52037A1BF110" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_ProductOfferingPrice_CustomCurrency" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FKBDEA2AF5AD7B501A" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FKBDEA2AF5CF576BA" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK7867CB24ABF079D4" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_Publication_GeoLocationItem" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK31A1BA21E49966A" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FKD1A7BEF5CC6B4F4C" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FKD1A7BEF5D76BA640" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_PublicationSimilarConfiguration_GeoLocationItemType" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_PublishableItemSavingPlanData_T_SavingPlanTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_VehicleBrand_VehicleBrandSellerAgencies" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK96331DE6C43B8851" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK__T_AuditCa__F_Veh__76E24C9F" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK866259E29BB40990" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_VehicleSegment_T_Hub_Rubro" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK866259E2CF4B2A38" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK71DCAE264DC8C47E" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK297C952853E0FF6A" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK__T_AuditCa__F_T_B__74FA042D" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_CreditPack_CreditPackState" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_MessageBroker_MessageKeyBroker" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_AppliedDiscountCoupon_DiscountCoupon" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_AppliedDiscountCoupon_UserWhoSpent" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_Audit_Clarin365TrackOfTransaction_T_Clarin365TrackOfTransaction" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_Clarin365TrackOfTransaction_PublicationOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_Discount_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_DiscountCoupon_Discount" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_DiscountCoupon_User" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_importer_HubProductConversion_product_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK18DD324C946DE0DB" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK587874B615555600" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK587874B6E3553DFC" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_IndexAttributeEntity_IndexEntity" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_IndexFeatureEntity_IndexEntity" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_LocalizedMessage_LocalizedMessageForm" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_ContactServiceTemplate_MessageTemplate" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_MessageBroker_MessageTemplate" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_MessageQueue_MessageQueueStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_MessageQueue_MessageTemplate" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_MessageQueueParam_MessageQueue" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_MessageQueueResponseDetail_MessageQueue" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_MessageQueueResponseDetail_MessageQueueStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_MessageTemplate_MessageSendType" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_PlanisysTemplate_MessageTemplate" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_StmpTemplate_MessageTemplate" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_PublicationVisits_Publication" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_ProcessScheduler_ProcessTask" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_CreditPack_ProductOffering" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_CreditPack_User" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_CreditPackItem_CreditPack" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_CreditPackItem_ProductOffering" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_ProductPackItem_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK7C741D72DE06E42F" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FKFB8C822F598B5F98" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_ProductOffering_PublishableItemType" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_ProductPackItem_ProductOffering" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_ProductOfferingPrice_ProductOffering" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_Audit_PublicationPaper_PublicationDates_T_PublicationPaper_PublicationDates" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_PublishableItemSavingPlanData_Car" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK297C9528DDAAF433" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FKCBBC40129034D8E7" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FKF5A52039034D8E7" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_PublicationOrder_ParentPublicationOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_PublicationOrder_T_PublicationPaper" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FKCF1CA1E0608FF38C" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FKCF1CA1E0A6C48992" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_PublicationPaper_PublicationDates_T_PublicationPaper" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_PublicationPaper_PublicationDates_T_PublicationPaper_PublicationDates_Process" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_PublishableItemImages_PublishableItem" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK7867CB24B3B16703" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_PublicationSimilarConfiguration_Base_PublishableItemType" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_PublicationSimilarConfiguration_Filter_PublishableItemType" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_PublishableItemSavingPlanData_T_PublishabeItemSavingPlanTransferData" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK44D6A5F2608FF38C" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_security_UserClaim_security_User_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_security_UserLogin_security_User_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_PublicationSimilarConfiguration_OperationType_Brand" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_PublicationSimilarConfiguration_OperationType_Model" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_PublicationSimilarConfiguration_OperationType_SavingPlanType" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_PublicationSimilarConfiguration_OperationType_Segment" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_PublicationSimilarConfiguration_OperationType_Traction" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_PublicationSimilarConfiguration_OperationType_Version" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_T_PublicationSimilarConfiguration_T_PublicationSimilarConfigurationFunctionality" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_AgencyUser_AgencyUser" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_AgencyUser_VehicleBrandSellerAgencies" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK549E06CADFA2ACF9" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK31A1BA2DFA2ACF9" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FK_user_ImportUser_user_User" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FKE0364196678601B2" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.FKE0364196D76072CA" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.SecurityUserRole" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.PublicationSite" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.UserRole" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.SuscriptionPurchaseOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.ClientUserCampaign" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.ClientUserVehicleBrand" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.BusinessDomainCurrency" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.BusinessDomainFuel" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.BusinessDomainImageFormat" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.BusinessDomainPublishableItemType" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.GeoLocationRingGeoLocationItem" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.PublishableItemTypeVehicleBrand" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.PublishableItemTypeVehicleModel" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.PublishableItemTypeVehicleSpecsCategory" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.PublishableItemTypeVehicleVersion" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.VehicleAttributeDefinition" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.VehicleSpecialAttributeDefinition" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.DiscountGeoLocationItem" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.ProductDiscount" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.ZonalSupplementAreaGeoLocationItem" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.ProductOfferingExcludedProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.ProductOfferingGeoLocationItem" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.ProductOfferingRequiredProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.VehiclePublishableItemPaymentMethod" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.PublicationSimilarConfigurationAvailableFromGeoLocationRing" ManuallyRouted="false" />
+        <AssociationConnector Association="DeAutos.Automation.Model.PublicationSimilarConfigurationFindGeoLocationRing" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

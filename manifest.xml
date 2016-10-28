@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<app>
+  <name>deautos-automation</name>
+  <version>09.00.00.00.00</version>
+  <path>automation</path>
+  <platform name="net" version="4.5.2" /> 
+</app>

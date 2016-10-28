@@ -1,0 +1,122 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeAutos.Automation.Framework", "DeAutos.Automation.Framework\DeAutos.Automation.Framework.csproj", "{6D65FDC6-9902-427E-BC37-75B4D872B14B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{32294ACC-4C78-4AF9-9FC3-FF58B1122A4F}"
+	ProjectSection(SolutionItems) = preProject
+		Configuration\env.database.config = Configuration\env.database.config
+		Configuration\env.environment.config = Configuration\env.environment.config
+		Configuration\env.formdata.config = Configuration\env.formdata.config
+		Configuration\env.urlpresentation.config = Configuration\env.urlpresentation.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dev", "dev", "{CA84A21B-1CE0-45D3-A1C4-1CE3F1289E81}"
+	ProjectSection(SolutionItems) = preProject
+		Configuration\dev\env.database.config = Configuration\dev\env.database.config
+		Configuration\dev\env.environment.config = Configuration\dev\env.environment.config
+		Configuration\dev\env.formdata.config = Configuration\dev\env.formdata.config
+		Configuration\dev\env.urlpresentation.config = Configuration\dev\env.urlpresentation.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "qa", "qa", "{AC0D518C-91D7-484C-BB44-59D377127339}"
+	ProjectSection(SolutionItems) = preProject
+		Configuration\qa\env.database.config = Configuration\qa\env.database.config
+		Configuration\qa\env.environment.config = Configuration\qa\env.environment.config
+		Configuration\qa\env.formdata.config = Configuration\qa\env.formdata.config
+		Configuration\qa\env.urlpresentation.config = Configuration\qa\env.urlpresentation.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "prod", "prod", "{AF770B7B-56EA-4BF9-9337-A4F78C71C6F3}"
+	ProjectSection(SolutionItems) = preProject
+		Configuration\prod\env.database.config = Configuration\prod\env.database.config
+		Configuration\prod\env.environment.config = Configuration\prod\env.environment.config
+		Configuration\prod\env.formdata.config = Configuration\prod\env.formdata.config
+		Configuration\prod\env.urlpresentation.config = Configuration\prod\env.urlpresentation.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeAutos.Automation.Base", "DeAutos.Automation.Base\DeAutos.Automation.Base.csproj", "{F750B16A-EC66-455B-970E-DEBFE33A1E26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeAutos.Automation.Integration", "DeAutos.Automation.Integration\DeAutos.Automation.Integration.csproj", "{BF068DA9-487F-4E4E-B9A2-06B3186E7B08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeAutos.Automation.Model", "DeAutos.Automation.Model\DeAutos.Automation.Model.csproj", "{9A06D74A-2186-49E4-81D9-208794481A54}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BrowserExtensions", "BrowserExtensions", "{A27BF899-AA12-4B4C-B5B0-2FCEC07B3917}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Firefox", "Firefox", "{A0EF1A82-F06F-4D95-AEDA-912FB045558E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JSErrorCollector.NET", "JSErrorCollector.NET", "{2E56DC11-B2F8-4AC2-B9A6-ADD71B812CE7}"
+	ProjectSection(SolutionItems) = preProject
+		BrowserExtensions\Firefox\JSErrorCollector.NET\JSErrorCollector.xpi = BrowserExtensions\Firefox\JSErrorCollector.NET\JSErrorCollector.xpi
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5470D2BA-49EB-4CBA-A3E6-151B12943B17}"
+	ProjectSection(SolutionItems) = preProject
+		Automation.testsettings = Automation.testsettings
+		AutomationClean.dgml = AutomationClean.dgml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeAutos.Automation.Integration.Pages", "DeAutos.Automation.Integration.Pages\DeAutos.Automation.Integration.Pages.csproj", "{CB931EAB-A145-4BB9-B97A-FA5E8B51DD0D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{FC920662-4C97-48F5-9DE8-D3D607B0264B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Base", "Base", "{9963FE31-00BC-4137-91DC-D8679F1E86F4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pages", "Pages", "{77062ACF-5B24-4F78-A728-CEBC7FCCD954}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeAutos.Automation.Runner", "DeAutos.Automation.Runner\DeAutos.Automation.Runner.csproj", "{B31FC210-07B8-4DA9-A6B3-B13FD2A485E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{827B9208-3C16-4640-9C77-F41D3AAB1584}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D65FDC6-9902-427E-BC37-75B4D872B14B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D65FDC6-9902-427E-BC37-75B4D872B14B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D65FDC6-9902-427E-BC37-75B4D872B14B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D65FDC6-9902-427E-BC37-75B4D872B14B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F750B16A-EC66-455B-970E-DEBFE33A1E26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F750B16A-EC66-455B-970E-DEBFE33A1E26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F750B16A-EC66-455B-970E-DEBFE33A1E26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F750B16A-EC66-455B-970E-DEBFE33A1E26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF068DA9-487F-4E4E-B9A2-06B3186E7B08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF068DA9-487F-4E4E-B9A2-06B3186E7B08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF068DA9-487F-4E4E-B9A2-06B3186E7B08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF068DA9-487F-4E4E-B9A2-06B3186E7B08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A06D74A-2186-49E4-81D9-208794481A54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A06D74A-2186-49E4-81D9-208794481A54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A06D74A-2186-49E4-81D9-208794481A54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A06D74A-2186-49E4-81D9-208794481A54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB931EAB-A145-4BB9-B97A-FA5E8B51DD0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB931EAB-A145-4BB9-B97A-FA5E8B51DD0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB931EAB-A145-4BB9-B97A-FA5E8B51DD0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB931EAB-A145-4BB9-B97A-FA5E8B51DD0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B31FC210-07B8-4DA9-A6B3-B13FD2A485E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B31FC210-07B8-4DA9-A6B3-B13FD2A485E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B31FC210-07B8-4DA9-A6B3-B13FD2A485E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B31FC210-07B8-4DA9-A6B3-B13FD2A485E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6D65FDC6-9902-427E-BC37-75B4D872B14B} = {FC920662-4C97-48F5-9DE8-D3D607B0264B}
+		{CA84A21B-1CE0-45D3-A1C4-1CE3F1289E81} = {32294ACC-4C78-4AF9-9FC3-FF58B1122A4F}
+		{AC0D518C-91D7-484C-BB44-59D377127339} = {32294ACC-4C78-4AF9-9FC3-FF58B1122A4F}
+		{AF770B7B-56EA-4BF9-9337-A4F78C71C6F3} = {32294ACC-4C78-4AF9-9FC3-FF58B1122A4F}
+		{F750B16A-EC66-455B-970E-DEBFE33A1E26} = {9963FE31-00BC-4137-91DC-D8679F1E86F4}
+		{9A06D74A-2186-49E4-81D9-208794481A54} = {FC920662-4C97-48F5-9DE8-D3D607B0264B}
+		{A27BF899-AA12-4B4C-B5B0-2FCEC07B3917} = {5470D2BA-49EB-4CBA-A3E6-151B12943B17}
+		{A0EF1A82-F06F-4D95-AEDA-912FB045558E} = {A27BF899-AA12-4B4C-B5B0-2FCEC07B3917}
+		{2E56DC11-B2F8-4AC2-B9A6-ADD71B812CE7} = {A0EF1A82-F06F-4D95-AEDA-912FB045558E}
+		{CB931EAB-A145-4BB9-B97A-FA5E8B51DD0D} = {77062ACF-5B24-4F78-A728-CEBC7FCCD954}
+	EndGlobalSection
+EndGlobal

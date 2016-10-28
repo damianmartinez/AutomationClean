@@ -1,0 +1,654 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9A06D74A-2186-49E4-81D9-208794481A54}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DeAutos.Automation.Model</RootNamespace>
+    <AssemblyName>DeAutos.Automation.Model</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Database\AgenciesContacted.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Alert.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\AlertFeature.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\AlertInterval.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\AlertPublishableItem.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\AlertUser.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\AppliedDiscountCoupon.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\AttributeDefinition.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\AuditCatalog.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\AuditClarin365TrackOfTransaction.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\AuditPublicationPaperDate.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\AuditRememberDay.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\AutoPublication.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\AutoPublicationVehicleModelYear.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\BackOfficeLog.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\BannerCampaign.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\BannerInfo.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\BasicOperation.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\BrandSavingPlan.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\BusinessDomain.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Campaign.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Car.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\CatalogLevel.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\CatalogMetadata.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\CatalogSponsor.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\CatalogSponsorCompare.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Clarin365TrackOfTransaction.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Client.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ClientState.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ClientUser.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Colour.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ContactButton.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ContactButtonConfiguration.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ContactData.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ContactServiceTemplate.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Conversation.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\CreditPack.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\CreditPackItem.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\CreditPackState.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Currency.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\CustomerGroup.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\DataCarConversionReport.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\DaxInfo.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\DbVersion.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\DeAutosModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeAutosModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\DeAutosModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\DeAutosModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DeAutosModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Discount.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\DiscountCoupon.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\dtproperty.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\EMailAudit.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\EndUser.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Feature.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\FeatureGroup.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\FeatureType.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Fuel.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\GeoLocationItem.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\GeoLocationItemAutoPublication.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\GeoLocationItemType.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\GeoLocationRing.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\HubColourConversion.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\HubCurrencyConversion.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\HubFuelConversion.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\HubGeoLocationItemConversion.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\HubProcessPublication.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\HubProductConversion.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\HubPublicationErrorDetail.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\HubRubro.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\HubVehicleModelConversion.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\HubVehicleSpecConversion.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ImageFormat.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ImporterProcessLog.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ImportUser.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\IndexAttributeEntity.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\IndexEntity.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\IndexFeatureEntity.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ListedVehicle.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ListedVehicleFeature.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ListedVehicleFeatureValue.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ListingSponsor.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ListingSponsorGeoLocationItem.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ListingSponsorVehicleBrand.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ListingSponsorVehicleModelYear.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\LocalizedMessage.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\LocalizedMessageForm.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Location.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\LocationType.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\MailDepositBlacklist.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Message.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\MessageActionAfterSent.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\MessageBroker.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\MessageKeyBroker.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\MessageQueue.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\MessageQueueParam.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\MessageQueueResponseDetail.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\MessageQueueStatu.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\MessageSendType.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\MessageSubType.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\MessageTemplate.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\MessageType.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\MetadataType.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\MobileAppInfo.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\NewCar.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PaperBrandModelConversion.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PaymentMethod.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PaymentMethodAvailability.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PaymentTicket.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PaymentTicketGatewayRequest.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PaymentTicketGatewayResponse.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PeopleContacted.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PeopleToBeContacted.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PhoneContact.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PhoneNumber.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PlanisysTemplate.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Prelisting.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PrelistingToVehicleBrand.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PrelistingToVehicleModel.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PricingZone.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ProcessScheduler.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ProcessTask.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Product.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ProductOffering.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ProductOfferingPrice.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ProductPackItem.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\proofa2.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Publication.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PublicationExternalAssociation.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PublicationPaper.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PublicationPaperDate.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PublicationPaperDateProcess.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PublicationProvider.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PublicationSimilarConfiguration.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PublicationSimilarConfigurationFunctionality.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PublicationSimilarConfigurationOperationType.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PublicationState.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PublicationType.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PublicationVisit.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PublishableItem.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PublishableItemImage.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PublishableItemPaymentMethod.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PublishableItemType.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PurchaseOrder.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PurchaseOrderItem.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\PurchaseOrderItemDiscount.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Remember.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\RememberDay.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\RememberDayItem.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Report.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Reporting.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ReportingScheduled.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Role.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\SapBillingInfo.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\SapBlacklist.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\SapZone.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\SavingPlan.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\SavingPlanTransferData.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\SavingPlanType.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\SecurityRole.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\SecurityUser.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Site.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\SiteType.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\SmtpTemplate.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\SourceConversation.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\SourceSection.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\SpecialAttributeDefinition.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Suscription.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\SuscriptionItem.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\sysdiagram.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Tag.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\TaxCondition.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\UsedCar.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\User.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\UserClaim.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\UserCustomerGroup.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\UserLogin.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Vehicle.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\VehicleBrand.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\VehicleBrandAutoPublication.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\VehicleBrandSellerClient.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\VehicleModel.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\VehicleModelSellerClient.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\VehicleSegment.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\VehicleSpecsCategory.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\VehicleType.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\VehicleVersion.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Database\ZonalSupplementArea.cs">
+      <DependentUpon>DeAutosModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <EntityDeploy Include="Database\DeAutosModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DeAutosModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Database\DeAutosModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DeAutosModel.edmx</DependentUpon>
+      <LastGenOutput>DeAutosModel.Context.cs</LastGenOutput>
+    </None>
+    <None Include="Database\DeAutosModel.edmx.diagram">
+      <DependentUpon>DeAutosModel.edmx</DependentUpon>
+    </None>
+    <None Include="Database\DeAutosModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DeAutosModel.edmx</DependentUpon>
+      <LastGenOutput>DeAutosModel.cs</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
